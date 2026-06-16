@@ -1,0 +1,27 @@
+{
+  "metadata": {
+    "version": "Agent_V2_Optimized",
+    "total": 50,
+    "timestamp": "2026-06-16 13:35:24"
+  },
+  "metrics": {
+    "avg_score": 4.46,
+    "hit_rate": 0.9,
+    "mrr": 0.8433,
+    "agreement_rate": 0.82,
+    "hallucination_rate": 0.1,
+    "pass_rate": 0.9,
+    "avg_latency_s": 0.757
+  },
+  "cost": {
+    "total_usd": 0.0,
+    "per_eval_usd": 0.0
+  },
+  "regression": {
+    "v1_avg_score": 4.4,
+    "v2_avg_score": 4.46,
+    "delta": 0.06,
+    "decision": "APPROVE",
+    "failure_reasons": []
+  }
+}
