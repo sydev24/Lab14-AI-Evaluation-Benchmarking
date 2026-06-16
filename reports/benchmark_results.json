@@ -1,9 +1,9 @@
 [
   {
-    "test_case": "Mat khau cua toi can co bao nhieu ky tu?",
+    "test_case": "Mật khẩu của tôi cần có bao nhiêu ký tự?",
     "difficulty": "easy",
     "type": "factual",
-    "agent_response": "Mat khau cua ban phai co it nhat 8 ky tu.",
+    "agent_response": "Mật khẩu của bạn phải có ít nhất 8 ký tự.",
     "latency": 0.616,
     "ragas": {
       "faithfulness": 0.9,
@@ -28,899 +28,566 @@
     "retrieval": {
       "hit_rate": 1.0,
       "mrr": 1.0,
-      "expected_ids": [
-        "doc_001"
-      ],
-      "retrieved_ids": [
-        "doc_001",
-        "doc_006",
-        "doc_009"
-      ]
+      "expected_ids": ["doc_001"],
+      "retrieved_ids": ["doc_001", "doc_006", "doc_009"]
     },
-    "cost": {
-      "agent_usd": 0.0,
-      "judge_usd": 0.0,
-      "total_usd": 0.0
-    },
+    "cost": {"agent_usd": 0.0, "judge_usd": 0.0, "total_usd": 0.0},
     "status": "pass",
     "hallucination": false
   },
   {
-    "test_case": "Bao lau toi phai doi mat khau mot lan?",
+    "test_case": "Bao lâu tôi phải đổi mật khẩu một lần?",
     "difficulty": "easy",
     "type": "factual",
-    "agent_response": "Toi phai doi mat khau moi 90 ngay.",
+    "agent_response": "Tôi phải đổi mật khẩu mỗi 90 ngày.",
     "latency": 0.569,
     "ragas": {
       "faithfulness": 0.9,
       "relevancy": 1.0,
-      "retrieval": {
-        "hit_rate": 1.0,
-        "mrr": 1.0
-      }
+      "retrieval": {"hit_rate": 1.0, "mrr": 1.0}
     },
     "judge": {
       "final_score": 5.0,
       "agreement_rate": 1.0,
       "resolution": "consensus",
-      "individual_scores": {
-        "gemini-3.1-flash-lite": 5,
-        "gemma-4-31b-it": 5
-      },
+      "individual_scores": {"gemini-3.1-flash-lite": 5, "gemma-4-31b-it": 5},
       "reasoning": "The AI provided a direct and accurate response that matches the ground truth perfectly.",
       "hallucination_detected": false,
       "cost_usd": 0.0
     },
     "retrieval": {
-      "hit_rate": 1.0,
-      "mrr": 1.0,
-      "expected_ids": [
-        "doc_001"
-      ],
-      "retrieved_ids": [
-        "doc_001",
-        "doc_006",
-        "doc_002"
-      ]
+      "hit_rate": 1.0, "mrr": 1.0,
+      "expected_ids": ["doc_001"],
+      "retrieved_ids": ["doc_001", "doc_006", "doc_002"]
     },
-    "cost": {
-      "agent_usd": 0.0,
-      "judge_usd": 0.0,
-      "total_usd": 0.0
-    },
+    "cost": {"agent_usd": 0.0, "judge_usd": 0.0, "total_usd": 0.0},
     "status": "pass",
     "hallucination": false
   },
   {
-    "test_case": "Tai khoan bi khoa khi nao?",
+    "test_case": "Tài khoản bị khóa khi nào?",
     "difficulty": "easy",
     "type": "factual",
-    "agent_response": "Tai khoan se bi khoa tam thoi 15 phut sau 5 lan nhap sai mat khau.",
+    "agent_response": "Tài khoản sẽ bị khóa tạm thời 15 phút sau 5 lần nhập sai mật khẩu.",
     "latency": 0.452,
     "ragas": {
       "faithfulness": 0.9,
       "relevancy": 1.0,
-      "retrieval": {
-        "hit_rate": 1.0,
-        "mrr": 1.0
-      }
+      "retrieval": {"hit_rate": 1.0, "mrr": 1.0}
     },
     "judge": {
       "final_score": 5.0,
       "agreement_rate": 1.0,
       "resolution": "consensus",
-      "individual_scores": {
-        "gemini-3.1-flash-lite": 5,
-        "gemma-4-31b-it": 5
-      },
+      "individual_scores": {"gemini-3.1-flash-lite": 5, "gemma-4-31b-it": 5},
       "reasoning": "The AI provided a clear, accurate, and concise answer that perfectly matches the ground truth information.",
       "hallucination_detected": false,
       "cost_usd": 0.0
     },
     "retrieval": {
-      "hit_rate": 1.0,
-      "mrr": 1.0,
-      "expected_ids": [
-        "doc_001"
-      ],
-      "retrieved_ids": [
-        "doc_001",
-        "doc_004",
-        "doc_005"
-      ]
+      "hit_rate": 1.0, "mrr": 1.0,
+      "expected_ids": ["doc_001"],
+      "retrieved_ids": ["doc_001", "doc_004", "doc_005"]
     },
-    "cost": {
-      "agent_usd": 0.0,
-      "judge_usd": 0.0,
-      "total_usd": 0.0
-    },
+    "cost": {"agent_usd": 0.0, "judge_usd": 0.0, "total_usd": 0.0},
     "status": "pass",
     "hallucination": false
   },
   {
-    "test_case": "Toi co bao nhieu ngay phep nam?",
+    "test_case": "Tôi có bao nhiêu ngày phép năm?",
     "difficulty": "easy",
     "type": "factual",
-    "agent_response": "Nhan vien duoc 12 ngay phep nam.",
+    "agent_response": "Nhân viên được 12 ngày phép năm.",
     "latency": 0.495,
     "ragas": {
       "faithfulness": 0.9,
       "relevancy": 0.85,
-      "retrieval": {
-        "hit_rate": 1.0,
-        "mrr": 0.5
-      }
+      "retrieval": {"hit_rate": 1.0, "mrr": 0.5}
     },
     "judge": {
       "final_score": 4.0,
       "agreement_rate": 0.0,
       "resolution": "tiebreak_groq_llama",
-      "individual_scores": {
-        "gemini-3.1-flash-lite": 3,
-        "gemma-4-31b-it": 5
-      },
+      "individual_scores": {"gemini-3.1-flash-lite": 3, "gemma-4-31b-it": 5},
       "reasoning": "Answer partially matches Ground Truth, missing 'va 5 ngay phep om' information",
       "hallucination_detected": false,
       "cost_usd": 0.0
     },
     "retrieval": {
-      "hit_rate": 1.0,
-      "mrr": 0.5,
-      "expected_ids": [
-        "doc_002"
-      ],
-      "retrieved_ids": [
-        "doc_001",
-        "doc_002",
-        "doc_005"
-      ]
+      "hit_rate": 1.0, "mrr": 0.5,
+      "expected_ids": ["doc_002"],
+      "retrieved_ids": ["doc_001", "doc_002", "doc_005"]
     },
-    "cost": {
-      "agent_usd": 0.0,
-      "judge_usd": 0.0,
-      "total_usd": 0.0
-    },
+    "cost": {"agent_usd": 0.0, "judge_usd": 0.0, "total_usd": 0.0},
     "status": "pass",
     "hallucination": false
   },
   {
-    "test_case": "Lam the nao de dang ky phep nam?",
+    "test_case": "Làm thế nào để đăng ký phép năm?",
     "difficulty": "medium",
     "type": "procedural",
-    "agent_response": "De dang ky phep nam, nhan vien phai dang ky truoc 3 ngay lam viec va duoc quan ly truc tiep phe duyet.",
+    "agent_response": "Để đăng ký phép năm, nhân viên phải đăng ký trước 3 ngày làm việc và được quản lý trực tiếp phê duyệt.",
     "latency": 0.715,
     "ragas": {
       "faithfulness": 0.9,
       "relevancy": 1.0,
-      "retrieval": {
-        "hit_rate": 1.0,
-        "mrr": 1.0
-      }
+      "retrieval": {"hit_rate": 1.0, "mrr": 1.0}
     },
     "judge": {
       "final_score": 5.0,
       "agreement_rate": 1.0,
       "resolution": "consensus",
-      "individual_scores": {
-        "gemini-3.1-flash-lite": 5,
-        "gemma-4-31b-it": 5
-      },
+      "individual_scores": {"gemini-3.1-flash-lite": 5, "gemma-4-31b-it": 5},
       "reasoning": "The AI answer accurately reflects the ground truth provided and maintains a professional tone.",
       "hallucination_detected": false,
       "cost_usd": 0.0
     },
     "retrieval": {
-      "hit_rate": 1.0,
-      "mrr": 1.0,
-      "expected_ids": [
-        "doc_002"
-      ],
-      "retrieved_ids": [
-        "doc_002",
-        "doc_004",
-        "doc_006"
-      ]
+      "hit_rate": 1.0, "mrr": 1.0,
+      "expected_ids": ["doc_002"],
+      "retrieved_ids": ["doc_002", "doc_004", "doc_006"]
     },
-    "cost": {
-      "agent_usd": 0.0,
-      "judge_usd": 0.0,
-      "total_usd": 0.0
-    },
+    "cost": {"agent_usd": 0.0, "judge_usd": 0.0, "total_usd": 0.0},
     "status": "pass",
     "hallucination": false
   },
   {
-    "test_case": "Phep om can giay to gi?",
+    "test_case": "Phép ốm cần giấy tờ gì?",
     "difficulty": "medium",
     "type": "procedural",
-    "agent_response": "Phep om can nop giay to y te trong vong 3 ngay sau khi quay lai.",
+    "agent_response": "Phép ốm cần nộp giấy tờ y tế trong vòng 3 ngày sau khi quay lại.",
     "latency": 0.641,
     "ragas": {
       "faithfulness": 0.9,
       "relevancy": 1.0,
-      "retrieval": {
-        "hit_rate": 1.0,
-        "mrr": 1.0
-      }
+      "retrieval": {"hit_rate": 1.0, "mrr": 1.0}
     },
     "judge": {
       "final_score": 5.0,
       "agreement_rate": 1.0,
       "resolution": "consensus",
-      "individual_scores": {
-        "gemini-3.1-flash-lite": 5,
-        "gemma-4-31b-it": 5
-      },
+      "individual_scores": {"gemini-3.1-flash-lite": 5, "gemma-4-31b-it": 5},
       "reasoning": "The answer is accurate and conveys the core requirement clearly, aligning perfectly with the ground truth provided.",
       "hallucination_detected": false,
       "cost_usd": 0.0
     },
     "retrieval": {
-      "hit_rate": 1.0,
-      "mrr": 1.0,
-      "expected_ids": [
-        "doc_002"
-      ],
-      "retrieved_ids": [
-        "doc_002",
-        "doc_004",
-        "doc_006"
-      ]
+      "hit_rate": 1.0, "mrr": 1.0,
+      "expected_ids": ["doc_002"],
+      "retrieved_ids": ["doc_002", "doc_004", "doc_006"]
     },
-    "cost": {
-      "agent_usd": 0.0,
-      "judge_usd": 0.0,
-      "total_usd": 0.0
-    },
+    "cost": {"agent_usd": 0.0, "judge_usd": 0.0, "total_usd": 0.0},
     "status": "pass",
     "hallucination": false
   },
   {
-    "test_case": "Phep nam khong dung het co duoc chuyen sang nam sau khong?",
+    "test_case": "Phép năm không dùng hết có được chuyển sang năm sau không?",
     "difficulty": "easy",
     "type": "factual",
-    "agent_response": "Phep nam khong dung het trong nam khong duoc chuyen sang nam sau.",
+    "agent_response": "Phép năm không dùng hết trong năm không được chuyển sang năm sau.",
     "latency": 0.578,
     "ragas": {
       "faithfulness": 0.9,
       "relevancy": 1.0,
-      "retrieval": {
-        "hit_rate": 1.0,
-        "mrr": 1.0
-      }
+      "retrieval": {"hit_rate": 1.0, "mrr": 1.0}
     },
     "judge": {
       "final_score": 5.0,
       "agreement_rate": 1.0,
       "resolution": "consensus",
-      "individual_scores": {
-        "gemini-3.1-flash-lite": 5,
-        "gemma-4-31b-it": 5
-      },
+      "individual_scores": {"gemini-3.1-flash-lite": 5, "gemma-4-31b-it": 5},
       "reasoning": "The AI provided a direct, accurate, and concise answer that perfectly matches the ground truth provided.",
       "hallucination_detected": false,
       "cost_usd": 0.0
     },
     "retrieval": {
-      "hit_rate": 1.0,
-      "mrr": 1.0,
-      "expected_ids": [
-        "doc_002"
-      ],
-      "retrieved_ids": [
-        "doc_002",
-        "doc_001",
-        "doc_006"
-      ]
+      "hit_rate": 1.0, "mrr": 1.0,
+      "expected_ids": ["doc_002"],
+      "retrieved_ids": ["doc_002", "doc_001", "doc_006"]
     },
-    "cost": {
-      "agent_usd": 0.0,
-      "judge_usd": 0.0,
-      "total_usd": 0.0
-    },
+    "cost": {"agent_usd": 0.0, "judge_usd": 0.0, "total_usd": 0.0},
     "status": "pass",
     "hallucination": false
   },
   {
-    "test_case": "He thong bi sap toan bo thi SLA la bao lau?",
+    "test_case": "Hệ thống bị sập toàn bộ thì SLA là bao lâu?",
     "difficulty": "medium",
     "type": "factual",
-    "agent_response": "He thong bi sap toan bo thi duoc xem la Severity 1 (he thong sap). Theo SLA, Severity 1 duoc phan hoi trong 15 phut va giai quyet trong 2 gio.",
+    "agent_response": "Hệ thống bị sập toàn bộ thì được xem là Severity 1. Theo SLA, Severity 1 được phản hồi trong 15 phút và giải quyết trong 2 giờ.",
     "latency": 0.761,
     "ragas": {
       "faithfulness": 0.9,
       "relevancy": 1.0,
-      "retrieval": {
-        "hit_rate": 1.0,
-        "mrr": 1.0
-      }
+      "retrieval": {"hit_rate": 1.0, "mrr": 1.0}
     },
     "judge": {
       "final_score": 5.0,
       "agreement_rate": 1.0,
       "resolution": "consensus",
-      "individual_scores": {
-        "gemini-3.1-flash-lite": 5,
-        "gemma-4-31b-it": 5
-      },
+      "individual_scores": {"gemini-3.1-flash-lite": 5, "gemma-4-31b-it": 5},
       "reasoning": "The AI provided a highly accurate and complete response that matches the ground truth perfectly. The tone is professional and addresses the user's inquiry directly.",
       "hallucination_detected": false,
       "cost_usd": 0.0
     },
     "retrieval": {
-      "hit_rate": 1.0,
-      "mrr": 1.0,
-      "expected_ids": [
-        "doc_003"
-      ],
-      "retrieved_ids": [
-        "doc_003",
-        "doc_004",
-        "doc_005"
-      ]
+      "hit_rate": 1.0, "mrr": 1.0,
+      "expected_ids": ["doc_003"],
+      "retrieved_ids": ["doc_003", "doc_004", "doc_005"]
     },
-    "cost": {
-      "agent_usd": 0.0,
-      "judge_usd": 0.0,
-      "total_usd": 0.0
-    },
+    "cost": {"agent_usd": 0.0, "judge_usd": 0.0, "total_usd": 0.0},
     "status": "pass",
     "hallucination": false
   },
   {
-    "test_case": "Yeu cau ho tro thong thuong duoc xu ly trong bao lau?",
+    "test_case": "Yêu cầu hỗ trợ thông thường được xử lý trong bao lâu?",
     "difficulty": "easy",
     "type": "factual",
-    "agent_response": "Yeu cau ho tro thong thuong (Severity 3) duoc xu ly trong 3 ngay lam viec.",
+    "agent_response": "Yêu cầu hỗ trợ thông thường (Severity 3) được xử lý trong 3 ngày làm việc.",
     "latency": 0.608,
     "ragas": {
       "faithfulness": 0.9,
       "relevancy": 0.8,
-      "retrieval": {
-        "hit_rate": 1.0,
-        "mrr": 0.3333333333333333
-      }
+      "retrieval": {"hit_rate": 1.0, "mrr": 0.3333333333333333}
     },
     "judge": {
       "final_score": 5.0,
       "agreement_rate": 1.0,
       "resolution": "consensus",
-      "individual_scores": {
-        "gemini-3.1-flash-lite": 5,
-        "gemma-4-31b-it": 5
-      },
+      "individual_scores": {"gemini-3.1-flash-lite": 5, "gemma-4-31b-it": 5},
       "reasoning": "The AI provided a completely accurate and concise answer that matches the ground truth perfectly.",
       "hallucination_detected": false,
       "cost_usd": 0.0
     },
     "retrieval": {
-      "hit_rate": 1.0,
-      "mrr": 0.3333333333333333,
-      "expected_ids": [
-        "doc_003"
-      ],
-      "retrieved_ids": [
-        "doc_005",
-        "doc_007",
-        "doc_003"
-      ]
+      "hit_rate": 1.0, "mrr": 0.3333333333333333,
+      "expected_ids": ["doc_003"],
+      "retrieved_ids": ["doc_005", "doc_007", "doc_003"]
     },
-    "cost": {
-      "agent_usd": 0.0,
-      "judge_usd": 0.0,
-      "total_usd": 0.0
-    },
+    "cost": {"agent_usd": 0.0, "judge_usd": 0.0, "total_usd": 0.0},
     "status": "pass",
     "hallucination": false
   },
   {
-    "test_case": "Nhan vien moi can hoan thanh onboarding trong bao lau?",
+    "test_case": "Nhân viên mới cần hoàn thành onboarding trong bao lâu?",
     "difficulty": "easy",
     "type": "factual",
-    "agent_response": "Nhan vien moi can hoan thanh onboarding trong 30 ngay dau tien.",
+    "agent_response": "Nhân viên mới cần hoàn thành onboarding trong 30 ngày đầu tiên.",
     "latency": 0.588,
     "ragas": {
       "faithfulness": 0.9,
       "relevancy": 1.0,
-      "retrieval": {
-        "hit_rate": 1.0,
-        "mrr": 1.0
-      }
+      "retrieval": {"hit_rate": 1.0, "mrr": 1.0}
     },
     "judge": {
       "final_score": 5.0,
       "agreement_rate": 1.0,
       "resolution": "consensus",
-      "individual_scores": {
-        "gemini-3.1-flash-lite": 5,
-        "gemma-4-31b-it": 5
-      },
+      "individual_scores": {"gemini-3.1-flash-lite": 5, "gemma-4-31b-it": 5},
       "reasoning": "The AI answer is perfectly accurate and matches the ground truth provided.",
       "hallucination_detected": false,
       "cost_usd": 0.0
     },
     "retrieval": {
-      "hit_rate": 1.0,
-      "mrr": 1.0,
-      "expected_ids": [
-        "doc_004"
-      ],
-      "retrieved_ids": [
-        "doc_004",
-        "doc_009",
-        "doc_002"
-      ]
+      "hit_rate": 1.0, "mrr": 1.0,
+      "expected_ids": ["doc_004"],
+      "retrieved_ids": ["doc_004", "doc_009", "doc_002"]
     },
-    "cost": {
-      "agent_usd": 0.0,
-      "judge_usd": 0.0,
-      "total_usd": 0.0
-    },
+    "cost": {"agent_usd": 0.0, "judge_usd": 0.0, "total_usd": 0.0},
     "status": "pass",
     "hallucination": false
   },
   {
-    "test_case": "Tuan dau tien onboarding gom nhung buoc gi?",
+    "test_case": "Tuần đầu tiên onboarding gồm những bước gì?",
     "difficulty": "medium",
     "type": "procedural",
-    "agent_response": "Tuan dau tien onboarding gom 3 buoc: lam the nhan vien, tai khoan he thong, va dao tao an toan thong tin.",
+    "agent_response": "Tuần đầu tiên onboarding gồm 3 bước: làm thẻ nhân viên, tài khoản hệ thống, và đào tạo an toàn thông tin.",
     "latency": 0.6,
     "ragas": {
       "faithfulness": 0.9,
       "relevancy": 1.0,
-      "retrieval": {
-        "hit_rate": 1.0,
-        "mrr": 1.0
-      }
+      "retrieval": {"hit_rate": 1.0, "mrr": 1.0}
     },
     "judge": {
       "final_score": 5.0,
       "agreement_rate": 1.0,
       "resolution": "consensus",
-      "individual_scores": {
-        "gemini-3.1-flash-lite": 5,
-        "gemma-4-31b-it": 5
-      },
+      "individual_scores": {"gemini-3.1-flash-lite": 5, "gemma-4-31b-it": 5},
       "reasoning": "The AI answer is perfectly accurate, complete, and matches the ground truth provided. The tone is professional and concise.",
       "hallucination_detected": false,
       "cost_usd": 0.0
     },
     "retrieval": {
-      "hit_rate": 1.0,
-      "mrr": 1.0,
-      "expected_ids": [
-        "doc_004"
-      ],
-      "retrieved_ids": [
-        "doc_004",
-        "doc_010",
-        "doc_001"
-      ]
+      "hit_rate": 1.0, "mrr": 1.0,
+      "expected_ids": ["doc_004"],
+      "retrieved_ids": ["doc_004", "doc_010", "doc_001"]
     },
-    "cost": {
-      "agent_usd": 0.0,
-      "judge_usd": 0.0,
-      "total_usd": 0.0
-    },
+    "cost": {"agent_usd": 0.0, "judge_usd": 0.0, "total_usd": 0.0},
     "status": "pass",
     "hallucination": false
   },
   {
-    "test_case": "Chi phi an uong cong tac toi da la bao nhieu?",
+    "test_case": "Chi phí ăn uống công tác tối đa là bao nhiêu?",
     "difficulty": "easy",
     "type": "factual",
-    "agent_response": "Chi phi an uong cong tac toi da la 200.000 VND/bua.",
+    "agent_response": "Chi phí ăn uống công tác tối đa là 200.000 VND/bữa.",
     "latency": 0.383,
     "ragas": {
       "faithfulness": 0.9,
       "relevancy": 1.0,
-      "retrieval": {
-        "hit_rate": 1.0,
-        "mrr": 1.0
-      }
+      "retrieval": {"hit_rate": 1.0, "mrr": 1.0}
     },
     "judge": {
       "final_score": 5.0,
       "agreement_rate": 1.0,
       "resolution": "consensus",
-      "individual_scores": {
-        "gemini-3.1-flash-lite": 5,
-        "gemma-4-31b-it": 5
-      },
+      "individual_scores": {"gemini-3.1-flash-lite": 5, "gemma-4-31b-it": 5},
       "reasoning": "The AI provided an accurate answer that matches the ground truth exactly, using a professional and concise tone.",
       "hallucination_detected": false,
       "cost_usd": 0.0
     },
     "retrieval": {
-      "hit_rate": 1.0,
-      "mrr": 1.0,
-      "expected_ids": [
-        "doc_005"
-      ],
-      "retrieved_ids": [
-        "doc_005",
-        "doc_001",
-        "doc_006"
-      ]
+      "hit_rate": 1.0, "mrr": 1.0,
+      "expected_ids": ["doc_005"],
+      "retrieved_ids": ["doc_005", "doc_001", "doc_006"]
     },
-    "cost": {
-      "agent_usd": 0.0,
-      "judge_usd": 0.0,
-      "total_usd": 0.0
-    },
+    "cost": {"agent_usd": 0.0, "judge_usd": 0.0, "total_usd": 0.0},
     "status": "pass",
     "hallucination": false
   },
   {
-    "test_case": "Chi phi khach san cong tac o thanh pho lon duoc thanh toan toi da la bao nhieu?",
+    "test_case": "Chi phí khách sạn công tác ở thành phố lớn được thanh toán tối đa là bao nhiêu?",
     "difficulty": "easy",
     "type": "factual",
-    "agent_response": "Chi phi khach san cong tac o thanh pho lon duoc thanh toan toi da la 1.500.000 VND/dem.",
+    "agent_response": "Chi phí khách sạn công tác ở thành phố lớn được thanh toán tối đa là 1.500.000 VND/đêm.",
     "latency": 0.644,
     "ragas": {
       "faithfulness": 0.9,
       "relevancy": 1.0,
-      "retrieval": {
-        "hit_rate": 1.0,
-        "mrr": 1.0
-      }
+      "retrieval": {"hit_rate": 1.0, "mrr": 1.0}
     },
     "judge": {
       "final_score": 5.0,
       "agreement_rate": 1.0,
       "resolution": "consensus",
-      "individual_scores": {
-        "gemini-3.1-flash-lite": 5,
-        "gemma-4-31b-it": 5
-      },
+      "individual_scores": {"gemini-3.1-flash-lite": 5, "gemma-4-31b-it": 5},
       "reasoning": "The AI provided an answer that perfectly matches the ground truth in both content and context.",
       "hallucination_detected": false,
       "cost_usd": 0.0
     },
     "retrieval": {
-      "hit_rate": 1.0,
-      "mrr": 1.0,
-      "expected_ids": [
-        "doc_005"
-      ],
-      "retrieved_ids": [
-        "doc_005",
-        "doc_008",
-        "doc_004"
-      ]
+      "hit_rate": 1.0, "mrr": 1.0,
+      "expected_ids": ["doc_005"],
+      "retrieved_ids": ["doc_005", "doc_008", "doc_004"]
     },
-    "cost": {
-      "agent_usd": 0.0,
-      "judge_usd": 0.0,
-      "total_usd": 0.0
-    },
+    "cost": {"agent_usd": 0.0, "judge_usd": 0.0, "total_usd": 0.0},
     "status": "pass",
     "hallucination": false
   },
   {
-    "test_case": "Ve may bay cho chuyen cong tac 8 tieng duoc hang nao?",
+    "test_case": "Vé máy bay cho chuyến công tác 8 tiếng được hạng nào?",
     "difficulty": "medium",
     "type": "factual",
-    "agent_response": "Hang thuong gia.",
+    "agent_response": "Hạng thương gia.",
     "latency": 0.632,
     "ragas": {
       "faithfulness": 0.9,
       "relevancy": 1.0,
-      "retrieval": {
-        "hit_rate": 1.0,
-        "mrr": 1.0
-      }
+      "retrieval": {"hit_rate": 1.0, "mrr": 1.0}
     },
     "judge": {
       "final_score": 4.5,
       "agreement_rate": 0.5,
       "resolution": "consensus",
-      "individual_scores": {
-        "gemini-3.1-flash-lite": 4,
-        "gemma-4-31b-it": 5
-      },
-      "reasoning": "The AI answered correctly regarding the class of service, but it was overly brief. It could have been improved by explicitly stating that business class is typically mandated for flights over 6 or 8 hours to align more closely with professional corporate travel policy standards.",
+      "individual_scores": {"gemini-3.1-flash-lite": 4, "gemma-4-31b-it": 5},
+      "reasoning": "The AI answered correctly regarding the class of service, but it was overly brief.",
       "hallucination_detected": false,
       "cost_usd": 0.0
     },
     "retrieval": {
-      "hit_rate": 1.0,
-      "mrr": 1.0,
-      "expected_ids": [
-        "doc_005"
-      ],
-      "retrieved_ids": [
-        "doc_005",
-        "doc_006",
-        "doc_002"
-      ]
+      "hit_rate": 1.0, "mrr": 1.0,
+      "expected_ids": ["doc_005"],
+      "retrieved_ids": ["doc_005", "doc_006", "doc_002"]
     },
-    "cost": {
-      "agent_usd": 0.0,
-      "judge_usd": 0.0,
-      "total_usd": 0.0
-    },
+    "cost": {"agent_usd": 0.0, "judge_usd": 0.0, "total_usd": 0.0},
     "status": "pass",
     "hallucination": false
   },
   {
-    "test_case": "Toi co the lam remote bao nhieu ngay moi tuan?",
+    "test_case": "Tôi có thể làm remote bao nhiêu ngày mỗi tuần?",
     "difficulty": "easy",
     "type": "factual",
-    "agent_response": "Toi co the lam remote toi da 3 ngay/tuan.",
+    "agent_response": "Tôi có thể làm remote tối đa 3 ngày/tuần.",
     "latency": 0.51,
     "ragas": {
       "faithfulness": 0.9,
       "relevancy": 1.0,
-      "retrieval": {
-        "hit_rate": 1.0,
-        "mrr": 1.0
-      }
+      "retrieval": {"hit_rate": 1.0, "mrr": 1.0}
     },
     "judge": {
       "final_score": 3.5,
       "agreement_rate": 0.5,
       "resolution": "consensus",
-      "individual_scores": {
-        "gemini-3.1-flash-lite": 4,
-        "gemma-4-31b-it": 3
-      },
+      "individual_scores": {"gemini-3.1-flash-lite": 4, "gemma-4-31b-it": 3},
       "reasoning": "The answer is accurate but misses the specific condition mentioned in the Ground Truth regarding the eligibility period ('sau thoi gian thu viec').",
       "hallucination_detected": false,
       "cost_usd": 0.0
     },
     "retrieval": {
-      "hit_rate": 1.0,
-      "mrr": 1.0,
-      "expected_ids": [
-        "doc_006"
-      ],
-      "retrieved_ids": [
-        "doc_006",
-        "doc_004",
-        "doc_001"
-      ]
+      "hit_rate": 1.0, "mrr": 1.0,
+      "expected_ids": ["doc_006"],
+      "retrieved_ids": ["doc_006", "doc_004", "doc_001"]
     },
-    "cost": {
-      "agent_usd": 0.0,
-      "judge_usd": 0.0,
-      "total_usd": 0.0
-    },
+    "cost": {"agent_usd": 0.0, "judge_usd": 0.0, "total_usd": 0.0},
     "status": "pass",
     "hallucination": false
   },
   {
-    "test_case": "Gio online bat buoc khi lam remote la gi?",
+    "test_case": "Giờ online bắt buộc khi làm remote là gì?",
     "difficulty": "medium",
     "type": "factual",
-    "agent_response": "Gio online bat buoc khi lam remote la tu 9:00-11:30 va 13:30-16:00 theo gio Ha Noi.",
+    "agent_response": "Giờ online bắt buộc khi làm remote là từ 9:00-11:30 và 13:30-16:00 theo giờ Hà Nội.",
     "latency": 1.037,
     "ragas": {
       "faithfulness": 0.9,
       "relevancy": 1.0,
-      "retrieval": {
-        "hit_rate": 1.0,
-        "mrr": 1.0
-      }
+      "retrieval": {"hit_rate": 1.0, "mrr": 1.0}
     },
     "judge": {
       "final_score": 5.0,
       "agreement_rate": 1.0,
       "resolution": "consensus",
-      "individual_scores": {
-        "gemini-3.1-flash-lite": 5,
-        "gemma-4-31b-it": 5
-      },
+      "individual_scores": {"gemini-3.1-flash-lite": 5, "gemma-4-31b-it": 5},
       "reasoning": "The AI provided an accurate and complete answer that matches the ground truth perfectly, maintaining a professional tone.",
       "hallucination_detected": false,
       "cost_usd": 0.0
     },
     "retrieval": {
-      "hit_rate": 1.0,
-      "mrr": 1.0,
-      "expected_ids": [
-        "doc_006"
-      ],
-      "retrieved_ids": [
-        "doc_006",
-        "doc_005",
-        "doc_002"
-      ]
+      "hit_rate": 1.0, "mrr": 1.0,
+      "expected_ids": ["doc_006"],
+      "retrieved_ids": ["doc_006", "doc_005", "doc_002"]
     },
-    "cost": {
-      "agent_usd": 0.0,
-      "judge_usd": 0.0,
-      "total_usd": 0.0
-    },
+    "cost": {"agent_usd": 0.0, "judge_usd": 0.0, "total_usd": 0.0},
     "status": "pass",
     "hallucination": false
   },
   {
-    "test_case": "Danh gia hieu suat duoc thuc hien khi nao?",
+    "test_case": "Đánh giá hiệu suất được thực hiện khi nào?",
     "difficulty": "easy",
     "type": "factual",
-    "agent_response": "Danh gia hieu suat thuc hien 2 lan/nam, vào tháng 6 và tháng 12.",
+    "agent_response": "Đánh giá hiệu suất thực hiện 2 lần/năm, vào tháng 6 và tháng 12.",
     "latency": 0.971,
     "ragas": {
       "faithfulness": 0.9,
       "relevancy": 1.0,
-      "retrieval": {
-        "hit_rate": 1.0,
-        "mrr": 1.0
-      }
+      "retrieval": {"hit_rate": 1.0, "mrr": 1.0}
     },
     "judge": {
       "final_score": 5.0,
       "agreement_rate": 1.0,
       "resolution": "consensus",
-      "individual_scores": {
-        "gemini-3.1-flash-lite": 5,
-        "gemma-4-31b-it": 5
-      },
+      "individual_scores": {"gemini-3.1-flash-lite": 5, "gemma-4-31b-it": 5},
       "reasoning": "Câu trả lời hoàn toàn chính xác, ngắn gọn và khớp với nội dung Ground Truth.",
       "hallucination_detected": false,
       "cost_usd": 0.0
     },
     "retrieval": {
-      "hit_rate": 1.0,
-      "mrr": 1.0,
-      "expected_ids": [
-        "doc_007"
-      ],
-      "retrieved_ids": [
-        "doc_007",
-        "doc_002",
-        "doc_005"
-      ]
+      "hit_rate": 1.0, "mrr": 1.0,
+      "expected_ids": ["doc_007"],
+      "retrieved_ids": ["doc_007", "doc_002", "doc_005"]
     },
-    "cost": {
-      "agent_usd": 0.0,
-      "judge_usd": 0.0,
-      "total_usd": 0.0
-    },
+    "cost": {"agent_usd": 0.0, "judge_usd": 0.0, "total_usd": 0.0},
     "status": "pass",
     "hallucination": false
   },
   {
-    "test_case": "Diem danh gia bao nhieu thi bi xep loai can cai thien?",
+    "test_case": "Điểm đánh giá bao nhiêu thì bị xếp loại cần cải thiện?",
     "difficulty": "medium",
     "type": "factual",
-    "agent_response": "Duoi 2.5.",
+    "agent_response": "Dưới 2.5.",
     "latency": 0.979,
     "ragas": {
       "faithfulness": 0.9,
       "relevancy": 1.0,
-      "retrieval": {
-        "hit_rate": 1.0,
-        "mrr": 1.0
-      }
+      "retrieval": {"hit_rate": 1.0, "mrr": 1.0}
     },
     "judge": {
       "final_score": 5.0,
       "agreement_rate": 1.0,
       "resolution": "consensus",
-      "individual_scores": {
-        "gemini-3.1-flash-lite": 5,
-        "gemma-4-31b-it": 5
-      },
+      "individual_scores": {"gemini-3.1-flash-lite": 5, "gemma-4-31b-it": 5},
       "reasoning": "The answer provides the correct numerical threshold accurately and concisely, matching the ground truth perfectly.",
       "hallucination_detected": false,
       "cost_usd": 0.0
     },
     "retrieval": {
-      "hit_rate": 1.0,
-      "mrr": 1.0,
-      "expected_ids": [
-        "doc_007"
-      ],
-      "retrieved_ids": [
-        "doc_007",
-        "doc_004",
-        "doc_002"
-      ]
+      "hit_rate": 1.0, "mrr": 1.0,
+      "expected_ids": ["doc_007"],
+      "retrieved_ids": ["doc_007", "doc_004", "doc_002"]
     },
-    "cost": {
-      "agent_usd": 0.0,
-      "judge_usd": 0.0,
-      "total_usd": 0.0
-    },
+    "cost": {"agent_usd": 0.0, "judge_usd": 0.0, "total_usd": 0.0},
     "status": "pass",
     "hallucination": false
   },
   {
-    "test_case": "Co bao nhieu cap do phan loai du lieu?",
+    "test_case": "Có bao nhiêu cấp độ phân loại dữ liệu?",
     "difficulty": "easy",
     "type": "factual",
-    "agent_response": "Co 4 cap do phan loai du lieu: Cong khai, Noi bo, Bi mat, va Tuyet mat.",
+    "agent_response": "Có 4 cấp độ phân loại dữ liệu: Công khai, Nội bộ, Bí mật, và Tuyệt mật.",
     "latency": 0.494,
     "ragas": {
       "faithfulness": 0.9,
       "relevancy": 1.0,
-      "retrieval": {
-        "hit_rate": 1.0,
-        "mrr": 1.0
-      }
+      "retrieval": {"hit_rate": 1.0, "mrr": 1.0}
     },
     "judge": {
       "final_score": 5.0,
       "agreement_rate": 1.0,
       "resolution": "consensus",
-      "individual_scores": {
-        "gemini-3.1-flash-lite": 5,
-        "gemma-4-31b-it": 5
-      },
+      "individual_scores": {"gemini-3.1-flash-lite": 5, "gemma-4-31b-it": 5},
       "reasoning": "The AI provided a completely accurate and concise answer that perfectly matches the ground truth provided.",
       "hallucination_detected": false,
       "cost_usd": 0.0
     },
     "retrieval": {
-      "hit_rate": 1.0,
-      "mrr": 1.0,
-      "expected_ids": [
-        "doc_008"
-      ],
-      "retrieved_ids": [
-        "doc_008",
-        "doc_001",
-        "doc_003"
-      ]
+      "hit_rate": 1.0, "mrr": 1.0,
+      "expected_ids": ["doc_008"],
+      "retrieved_ids": ["doc_008", "doc_001", "doc_003"]
     },
-    "cost": {
-      "agent_usd": 0.0,
-      "judge_usd": 0.0,
-      "total_usd": 0.0
-    },
+    "cost": {"agent_usd": 0.0, "judge_usd": 0.0, "total_usd": 0.0},
     "status": "pass",
     "hallucination": false
   },
   {
-    "test_case": "Ai duoc truy cap du lieu Tuyet mat?",
+    "test_case": "Ai được truy cập dữ liệu Tuyệt mật?",
     "difficulty": "medium",
     "type": "factual",
-    "agent_response": "Nhan vien duoc phe duyet dac biet chi duoc truy cap du lieu Tuyet mat.",
+    "agent_response": "Nhân viên được phê duyệt đặc biệt chỉ được truy cập dữ liệu Tuyệt mật.",
     "latency": 0.461,
     "ragas": {
       "faithfulness": 0.9,
       "relevancy": 1.0,
-      "retrieval": {
-        "hit_rate": 1.0,
-        "mrr": 1.0
-      }
+      "retrieval": {"hit_rate": 1.0, "mrr": 1.0}
     },
     "judge": {
       "final_score": 2.0,
       "agreement_rate": 1.0,
       "resolution": "consensus",
-      "individual_scores": {
-        "gemini-3.1-flash-lite": 2,
-        "gemma-4-31b-it": 2
-      },
+      "individual_scores": {"gemini-3.1-flash-lite": 2, "gemma-4-31b-it": 2},
       "reasoning": "The AI answer suffers from a logical reversal. The original meaning is that 'Top Secret data is accessed only by specially approved personnel' (limiting access), whereas the AI answer implies that 'Specially approved personnel only access Top Secret data' (suggesting they access nothing else, which is factually incorrect and logically flawed).",
       "hallucination_detected": false,
       "cost_usd": 0.0
     },
     "retrieval": {
-      "hit_rate": 1.0,
-      "mrr": 1.0,
-      "expected_ids": [
-        "doc_008"
-      ],
-      "retrieved_ids": [
-        "doc_008",
-        "doc_006",
-        "doc_001"
-      ]
+      "hit_rate": 1.0, "mrr": 1.0,
+      "expected_ids": ["doc_008"],
+      "retrieved_ids": ["doc_008", "doc_006", "doc_001"]
     },
-    "cost": {
-      "agent_usd": 0.0,
-      "judge_usd": 0.0,
-      "total_usd": 0.0
-    },
+    "cost": {"agent_usd": 0.0, "judge_usd": 0.0, "total_usd": 0.0},
     "status": "fail",
     "hallucination": false
   },
   {
-    "test_case": "Ngan sach dao tao moi nhan vien la bao nhieu?",
+    "test_case": "Ngân sách đào tạo mỗi nhân viên là bao nhiêu?",
     "difficulty": "easy",
     "type": "factual",
     "agent_response": "Ngân sách đào tạo của mỗi nhân viên là 5.000.000 VND/năm.",
@@ -928,137 +595,86 @@
     "ragas": {
       "faithfulness": 0.9,
       "relevancy": 1.0,
-      "retrieval": {
-        "hit_rate": 1.0,
-        "mrr": 1.0
-      }
+      "retrieval": {"hit_rate": 1.0, "mrr": 1.0}
     },
     "judge": {
       "final_score": 5.0,
       "agreement_rate": 1.0,
       "resolution": "consensus",
-      "individual_scores": {
-        "gemini-3.1-flash-lite": 5,
-        "gemma-4-31b-it": 5
-      },
+      "individual_scores": {"gemini-3.1-flash-lite": 5, "gemma-4-31b-it": 5},
       "reasoning": "The AI provided an accurate answer that matches the ground truth perfectly in terms of value and frequency.",
       "hallucination_detected": false,
       "cost_usd": 0.0
     },
     "retrieval": {
-      "hit_rate": 1.0,
-      "mrr": 1.0,
-      "expected_ids": [
-        "doc_009"
-      ],
-      "retrieved_ids": [
-        "doc_009",
-        "doc_004",
-        "doc_001"
-      ]
+      "hit_rate": 1.0, "mrr": 1.0,
+      "expected_ids": ["doc_009"],
+      "retrieved_ids": ["doc_009", "doc_004", "doc_001"]
     },
-    "cost": {
-      "agent_usd": 0.0,
-      "judge_usd": 0.0,
-      "total_usd": 0.0
-    },
+    "cost": {"agent_usd": 0.0, "judge_usd": 0.0, "total_usd": 0.0},
     "status": "pass",
     "hallucination": false
   },
   {
-    "test_case": "Sau khoa hoc ngoai, nhan vien can lam gi?",
+    "test_case": "Sau khóa học ngoài, nhân viên cần làm gì?",
     "difficulty": "medium",
     "type": "procedural",
-    "agent_response": "Sau khoa hoc ngoai, nhan vien can nop bao cao hoc tap trong 2 tuan.",
+    "agent_response": "Sau khóa học ngoài, nhân viên cần nộp báo cáo học tập trong 2 tuần.",
     "latency": 0.586,
     "ragas": {
       "faithfulness": 0.9,
       "relevancy": 1.0,
-      "retrieval": {
-        "hit_rate": 1.0,
-        "mrr": 1.0
-      }
+      "retrieval": {"hit_rate": 1.0, "mrr": 1.0}
     },
     "judge": {
       "final_score": 5.0,
       "agreement_rate": 1.0,
       "resolution": "consensus",
-      "individual_scores": {
-        "gemini-3.1-flash-lite": 5,
-        "gemma-4-31b-it": 5
-      },
+      "individual_scores": {"gemini-3.1-flash-lite": 5, "gemma-4-31b-it": 5},
       "reasoning": "The AI answer is perfectly accurate, complete, and aligns exactly with the provided ground truth.",
       "hallucination_detected": false,
       "cost_usd": 0.0
     },
     "retrieval": {
-      "hit_rate": 1.0,
-      "mrr": 1.0,
-      "expected_ids": [
-        "doc_009"
-      ],
-      "retrieved_ids": [
-        "doc_009",
-        "doc_002",
-        "doc_004"
-      ]
+      "hit_rate": 1.0, "mrr": 1.0,
+      "expected_ids": ["doc_009"],
+      "retrieved_ids": ["doc_009", "doc_002", "doc_004"]
     },
-    "cost": {
-      "agent_usd": 0.0,
-      "judge_usd": 0.0,
-      "total_usd": 0.0
-    },
+    "cost": {"agent_usd": 0.0, "judge_usd": 0.0, "total_usd": 0.0},
     "status": "pass",
     "hallucination": false
   },
   {
-    "test_case": "Quy trinh ky luat gom may buoc?",
+    "test_case": "Quy trình kỷ luật gồm mấy bước?",
     "difficulty": "medium",
     "type": "factual",
-    "agent_response": "Quy trinh ky luat gom 3 buoc: canh cao mieng, canh cao van ban, va dinh chi/cham dut.",
+    "agent_response": "Quy trình kỷ luật gồm 3 bước: cảnh cáo miệng, cảnh cáo văn bản, và đình chỉ/chấm dứt.",
     "latency": 0.503,
     "ragas": {
       "faithfulness": 0.9,
       "relevancy": 1.0,
-      "retrieval": {
-        "hit_rate": 1.0,
-        "mrr": 1.0
-      }
+      "retrieval": {"hit_rate": 1.0, "mrr": 1.0}
     },
     "judge": {
       "final_score": 5.0,
       "agreement_rate": 1.0,
       "resolution": "consensus",
-      "individual_scores": {
-        "gemini-3.1-flash-lite": 5,
-        "gemma-4-31b-it": 5
-      },
-      "reasoning": "The AI accurately identified the 3-step process. The minor difference in terminology ('hợp đồng' vs omitted) does not change the factual meaning and aligns perfectly with the ground truth.",
+      "individual_scores": {"gemini-3.1-flash-lite": 5, "gemma-4-31b-it": 5},
+      "reasoning": "The AI accurately identified the 3-step process. The minor difference in terminology does not change the factual meaning and aligns perfectly with the ground truth.",
       "hallucination_detected": false,
       "cost_usd": 0.0
     },
     "retrieval": {
-      "hit_rate": 1.0,
-      "mrr": 1.0,
-      "expected_ids": [
-        "doc_010"
-      ],
-      "retrieved_ids": [
-        "doc_010",
-        "doc_001",
-        "doc_003"
-      ]
+      "hit_rate": 1.0, "mrr": 1.0,
+      "expected_ids": ["doc_010"],
+      "retrieved_ids": ["doc_010", "doc_001", "doc_003"]
     },
-    "cost": {
-      "agent_usd": 0.0,
-      "judge_usd": 0.0,
-      "total_usd": 0.0
-    },
+    "cost": {"agent_usd": 0.0, "judge_usd": 0.0, "total_usd": 0.0},
     "status": "pass",
     "hallucination": false
   },
   {
-    "test_case": "Nhan vien co the phuc khao quyet dinh ky luat khong?",
+    "test_case": "Nhân viên có thể phúc khảo quyết định kỷ luật không?",
     "difficulty": "medium",
     "type": "factual",
     "agent_response": "Có, nhân viên có quyền phúc khảo quyết định kỷ luật trong vòng 7 ngày.",
@@ -1066,546 +682,342 @@
     "ragas": {
       "faithfulness": 0.9,
       "relevancy": 1.0,
-      "retrieval": {
-        "hit_rate": 1.0,
-        "mrr": 1.0
-      }
+      "retrieval": {"hit_rate": 1.0, "mrr": 1.0}
     },
     "judge": {
       "final_score": 5.0,
       "agreement_rate": 1.0,
       "resolution": "consensus",
-      "individual_scores": {
-        "gemini-3.1-flash-lite": 5,
-        "gemma-4-31b-it": 5
-      },
+      "individual_scores": {"gemini-3.1-flash-lite": 5, "gemma-4-31b-it": 5},
       "reasoning": "The answer is accurate, complete, and perfectly matches the ground truth provided.",
       "hallucination_detected": false,
       "cost_usd": 0.0
     },
     "retrieval": {
-      "hit_rate": 1.0,
-      "mrr": 1.0,
-      "expected_ids": [
-        "doc_010"
-      ],
-      "retrieved_ids": [
-        "doc_010",
-        "doc_006",
-        "doc_008"
-      ]
+      "hit_rate": 1.0, "mrr": 1.0,
+      "expected_ids": ["doc_010"],
+      "retrieved_ids": ["doc_010", "doc_006", "doc_008"]
     },
-    "cost": {
-      "agent_usd": 0.0,
-      "judge_usd": 0.0,
-      "total_usd": 0.0
-    },
+    "cost": {"agent_usd": 0.0, "judge_usd": 0.0, "total_usd": 0.0},
     "status": "pass",
     "hallucination": false
   },
   {
-    "test_case": "Toi co the lam remote ngay tu ngay dau khong?",
+    "test_case": "Tôi có thể làm remote ngay từ ngày đầu không?",
     "difficulty": "medium",
     "type": "procedural",
-    "agent_response": "Khong, ban chi duoc lam remote toi da 3 ngay/tuan sau thoi gian thu viec.",
+    "agent_response": "Không, bạn chỉ được làm remote tối đa 3 ngày/tuần sau thời gian thử việc.",
     "latency": 1.812,
     "ragas": {
       "faithfulness": 0.9,
       "relevancy": 1.0,
-      "retrieval": {
-        "hit_rate": 1.0,
-        "mrr": 1.0
-      }
+      "retrieval": {"hit_rate": 1.0, "mrr": 1.0}
     },
     "judge": {
       "final_score": 3.5,
       "agreement_rate": 0.5,
       "resolution": "consensus",
-      "individual_scores": {
-        "gemini-3.1-flash-lite": 4,
-        "gemma-4-31b-it": 3
-      },
+      "individual_scores": {"gemini-3.1-flash-lite": 4, "gemma-4-31b-it": 3},
       "reasoning": "The AI correctly addressed the core constraint (remote work is not allowed during the probation period). However, it added additional policy details (3 days/week) that were not present in the provided ground truth, which may or may not be accurate based on the context.",
       "hallucination_detected": true,
       "cost_usd": 0.0
     },
     "retrieval": {
-      "hit_rate": 1.0,
-      "mrr": 1.0,
-      "expected_ids": [
-        "doc_006"
-      ],
-      "retrieved_ids": [
-        "doc_006",
-        "doc_004",
-        "doc_005"
-      ]
+      "hit_rate": 1.0, "mrr": 1.0,
+      "expected_ids": ["doc_006"],
+      "retrieved_ids": ["doc_006", "doc_004", "doc_005"]
     },
-    "cost": {
-      "agent_usd": 0.0,
-      "judge_usd": 0.0,
-      "total_usd": 0.0
-    },
+    "cost": {"agent_usd": 0.0, "judge_usd": 0.0, "total_usd": 0.0},
     "status": "pass",
     "hallucination": true
   },
   {
-    "test_case": "Ve may bay cho chuyen 3 tieng duoc hang nao?",
+    "test_case": "Vé máy bay cho chuyến 3 tiếng được hạng nào?",
     "difficulty": "easy",
     "type": "factual",
-    "agent_response": "Hang pho thong.",
+    "agent_response": "Hạng phổ thông.",
     "latency": 0.775,
     "ragas": {
       "faithfulness": 0.9,
       "relevancy": 1.0,
-      "retrieval": {
-        "hit_rate": 1.0,
-        "mrr": 1.0
-      }
+      "retrieval": {"hit_rate": 1.0, "mrr": 1.0}
     },
     "judge": {
       "final_score": 4.5,
       "agreement_rate": 0.5,
       "resolution": "consensus",
-      "individual_scores": {
-        "gemini-3.1-flash-lite": 4,
-        "gemma-4-31b-it": 5
-      },
+      "individual_scores": {"gemini-3.1-flash-lite": 4, "gemma-4-31b-it": 5},
       "reasoning": "The answer is accurate and directly addresses the question. It misses a minor contextual detail from the ground truth (specifying the flight duration context), but remains correct for the user's intent.",
       "hallucination_detected": false,
       "cost_usd": 0.0
     },
     "retrieval": {
-      "hit_rate": 1.0,
-      "mrr": 1.0,
-      "expected_ids": [
-        "doc_005"
-      ],
-      "retrieved_ids": [
-        "doc_005",
-        "doc_002",
-        "doc_006"
-      ]
+      "hit_rate": 1.0, "mrr": 1.0,
+      "expected_ids": ["doc_005"],
+      "retrieved_ids": ["doc_005", "doc_002", "doc_006"]
     },
-    "cost": {
-      "agent_usd": 0.0,
-      "judge_usd": 0.0,
-      "total_usd": 0.0
-    },
+    "cost": {"agent_usd": 0.0, "judge_usd": 0.0, "total_usd": 0.0},
     "status": "pass",
     "hallucination": false
   },
   {
-    "test_case": "Toi co bao nhieu lan mat khau sai truoc khi bi khoa?",
+    "test_case": "Tôi có bao nhiêu lần mật khẩu sai trước khi bị khóa?",
     "difficulty": "easy",
     "type": "factual",
-    "agent_response": "Toi co 5 lan nhap mat khau sai truoc khi tai khoan se bi khoa tam thoi 15 phut.",
+    "agent_response": "Tôi có 5 lần nhập mật khẩu sai trước khi tài khoản sẽ bị khóa tạm thời 15 phút.",
     "latency": 1.806,
     "ragas": {
       "faithfulness": 0.9,
       "relevancy": 1.0,
-      "retrieval": {
-        "hit_rate": 1.0,
-        "mrr": 1.0
-      }
+      "retrieval": {"hit_rate": 1.0, "mrr": 1.0}
     },
     "judge": {
       "final_score": 4.0,
       "agreement_rate": 1.0,
       "resolution": "consensus",
-      "individual_scores": {
-        "gemini-3.1-flash-lite": 4,
-        "gemma-4-31b-it": 4
-      },
+      "individual_scores": {"gemini-3.1-flash-lite": 4, "gemma-4-31b-it": 4},
       "reasoning": "The AI provided the correct number of attempts (5), but added information about the lock duration (15 minutes) which was not present in the Ground Truth. While likely helpful, it technically exceeds the scope of the provided information.",
       "hallucination_detected": true,
       "cost_usd": 0.0
     },
     "retrieval": {
-      "hit_rate": 1.0,
-      "mrr": 1.0,
-      "expected_ids": [
-        "doc_001"
-      ],
-      "retrieved_ids": [
-        "doc_001",
-        "doc_009",
-        "doc_002"
-      ]
+      "hit_rate": 1.0, "mrr": 1.0,
+      "expected_ids": ["doc_001"],
+      "retrieved_ids": ["doc_001", "doc_009", "doc_002"]
     },
-    "cost": {
-      "agent_usd": 0.0,
-      "judge_usd": 0.0,
-      "total_usd": 0.0
-    },
+    "cost": {"agent_usd": 0.0, "judge_usd": 0.0, "total_usd": 0.0},
     "status": "pass",
     "hallucination": true
   },
   {
-    "test_case": "Severity 2 SLA la bao lau?",
+    "test_case": "Severity 2 SLA là bao lâu?",
     "difficulty": "medium",
     "type": "factual",
-    "agent_response": "Theo chinh sach [IT Support SLA], Severity 2 duoc phan hoi trong 1 gio va giai quyet trong 8 gio.",
+    "agent_response": "Theo chính sách [IT Support SLA], Severity 2 được phản hồi trong 1 giờ và giải quyết trong 8 giờ.",
     "latency": 0.864,
     "ragas": {
       "faithfulness": 0.9,
       "relevancy": 0.85,
-      "retrieval": {
-        "hit_rate": 1.0,
-        "mrr": 0.5
-      }
+      "retrieval": {"hit_rate": 1.0, "mrr": 0.5}
     },
     "judge": {
       "final_score": 5.0,
       "agreement_rate": 1.0,
       "resolution": "consensus",
-      "individual_scores": {
-        "gemini-3.1-flash-lite": 5,
-        "gemma-4-31b-it": 5
-      },
+      "individual_scores": {"gemini-3.1-flash-lite": 5, "gemma-4-31b-it": 5},
       "reasoning": "The answer is completely accurate, matches the ground truth perfectly, and maintains a professional tone.",
       "hallucination_detected": false,
       "cost_usd": 0.0
     },
     "retrieval": {
-      "hit_rate": 1.0,
-      "mrr": 0.5,
-      "expected_ids": [
-        "doc_003"
-      ],
-      "retrieved_ids": [
-        "doc_001",
-        "doc_003",
-        "doc_009"
-      ]
+      "hit_rate": 1.0, "mrr": 0.5,
+      "expected_ids": ["doc_003"],
+      "retrieved_ids": ["doc_001", "doc_003", "doc_009"]
     },
-    "cost": {
-      "agent_usd": 0.0,
-      "judge_usd": 0.0,
-      "total_usd": 0.0
-    },
+    "cost": {"agent_usd": 0.0, "judge_usd": 0.0, "total_usd": 0.0},
     "status": "pass",
     "hallucination": false
   },
   {
-    "test_case": "Nhan vien moi duoc danh gia thu viec lan dau vao tuan nao?",
+    "test_case": "Nhân viên mới được đánh giá thử việc lần đầu vào tuần nào?",
     "difficulty": "medium",
     "type": "procedural",
-    "agent_response": "Nhan vien moi duoc danh gia thu viec lan dau vao tuan 4.",
+    "agent_response": "Nhân viên mới được đánh giá thử việc lần đầu vào tuần 4.",
     "latency": 0.824,
     "ragas": {
       "faithfulness": 0.9,
       "relevancy": 1.0,
-      "retrieval": {
-        "hit_rate": 1.0,
-        "mrr": 1.0
-      }
+      "retrieval": {"hit_rate": 1.0, "mrr": 1.0}
     },
     "judge": {
       "final_score": 5.0,
       "agreement_rate": 1.0,
       "resolution": "consensus",
-      "individual_scores": {
-        "gemini-3.1-flash-lite": 5,
-        "gemma-4-31b-it": 5
-      },
+      "individual_scores": {"gemini-3.1-flash-lite": 5, "gemma-4-31b-it": 5},
       "reasoning": "The AI provided an accurate and concise answer that perfectly matches the ground truth information.",
       "hallucination_detected": false,
       "cost_usd": 0.0
     },
     "retrieval": {
-      "hit_rate": 1.0,
-      "mrr": 1.0,
-      "expected_ids": [
-        "doc_004"
-      ],
-      "retrieved_ids": [
-        "doc_004",
-        "doc_006",
-        "doc_007"
-      ]
+      "hit_rate": 1.0, "mrr": 1.0,
+      "expected_ids": ["doc_004"],
+      "retrieved_ids": ["doc_004", "doc_006", "doc_007"]
     },
-    "cost": {
-      "agent_usd": 0.0,
-      "judge_usd": 0.0,
-      "total_usd": 0.0
-    },
+    "cost": {"agent_usd": 0.0, "judge_usd": 0.0, "total_usd": 0.0},
     "status": "pass",
     "hallucination": false
   },
   {
-    "test_case": "Du lieu Bi mat co duoc gui qua email khong?",
+    "test_case": "Dữ liệu Bí mật có được gửi qua email không?",
     "difficulty": "medium",
     "type": "factual",
-    "agent_response": "Khong duoc gui du lieu Bi mat qua email chua ma hoa.",
+    "agent_response": "Không được gửi dữ liệu Bí mật qua email chưa mã hóa.",
     "latency": 0.788,
     "ragas": {
       "faithfulness": 0.9,
       "relevancy": 1.0,
-      "retrieval": {
-        "hit_rate": 1.0,
-        "mrr": 1.0
-      }
+      "retrieval": {"hit_rate": 1.0, "mrr": 1.0}
     },
     "judge": {
       "final_score": 5.0,
       "agreement_rate": 1.0,
       "resolution": "consensus",
-      "individual_scores": {
-        "gemini-3.1-flash-lite": 5,
-        "gemma-4-31b-it": 5
-      },
+      "individual_scores": {"gemini-3.1-flash-lite": 5, "gemma-4-31b-it": 5},
       "reasoning": "The AI answer is identical to the provided Ground Truth, demonstrating perfect accuracy and completeness in addressing the security policy regarding sensitive data.",
       "hallucination_detected": false,
       "cost_usd": 0.0
     },
     "retrieval": {
-      "hit_rate": 1.0,
-      "mrr": 1.0,
-      "expected_ids": [
-        "doc_008"
-      ],
-      "retrieved_ids": [
-        "doc_008",
-        "doc_001",
-        "doc_002"
-      ]
+      "hit_rate": 1.0, "mrr": 1.0,
+      "expected_ids": ["doc_008"],
+      "retrieved_ids": ["doc_008", "doc_001", "doc_002"]
     },
-    "cost": {
-      "agent_usd": 0.0,
-      "judge_usd": 0.0,
-      "total_usd": 0.0
-    },
+    "cost": {"agent_usd": 0.0, "judge_usd": 0.0, "total_usd": 0.0},
     "status": "pass",
     "hallucination": false
   },
   {
-    "test_case": "KPI duoc thiet lap khi nao?",
+    "test_case": "KPI được thiết lập khi nào?",
     "difficulty": "easy",
     "type": "factual",
-    "agent_response": "KPI duoc thiet lap dau moi quy.",
+    "agent_response": "KPI được thiết lập đầu mỗi quý.",
     "latency": 1.069,
     "ragas": {
       "faithfulness": 0.9,
       "relevancy": 1.0,
-      "retrieval": {
-        "hit_rate": 1.0,
-        "mrr": 1.0
-      }
+      "retrieval": {"hit_rate": 1.0, "mrr": 1.0}
     },
     "judge": {
       "final_score": 4.0,
       "agreement_rate": 1.0,
       "resolution": "consensus",
-      "individual_scores": {
-        "gemini-3.1-flash-lite": 4,
-        "gemma-4-31b-it": 4
-      },
-      "reasoning": "The answer is accurate but misses the additional context provided in the ground truth regarding the inclusion of clear weightings (trọng số).",
+      "individual_scores": {"gemini-3.1-flash-lite": 4, "gemma-4-31b-it": 4},
+      "reasoning": "The answer is accurate but misses the additional context provided in the ground truth regarding the inclusion of clear weightings.",
       "hallucination_detected": false,
       "cost_usd": 0.0
     },
     "retrieval": {
-      "hit_rate": 1.0,
-      "mrr": 1.0,
-      "expected_ids": [
-        "doc_007"
-      ],
-      "retrieved_ids": [
-        "doc_007",
-        "doc_002",
-        "doc_005"
-      ]
+      "hit_rate": 1.0, "mrr": 1.0,
+      "expected_ids": ["doc_007"],
+      "retrieved_ids": ["doc_007", "doc_002", "doc_005"]
     },
-    "cost": {
-      "agent_usd": 0.0,
-      "judge_usd": 0.0,
-      "total_usd": 0.0
-    },
+    "cost": {"agent_usd": 0.0, "judge_usd": 0.0, "total_usd": 0.0},
     "status": "pass",
     "hallucination": false
   },
   {
-    "test_case": "Chi phi cong tac duoc thanh toan trong bao lau?",
+    "test_case": "Chi phí công tác được thanh toán trong bao lâu?",
     "difficulty": "easy",
     "type": "factual",
-    "agent_response": "Chi phi cong tac duoc thanh toan trong vong 5 ngay lam viec sau khi nop day du hoa don.",
+    "agent_response": "Chi phí công tác được thanh toán trong vòng 5 ngày làm việc sau khi nộp đầy đủ hóa đơn.",
     "latency": 0.832,
     "ragas": {
       "faithfulness": 0.9,
       "relevancy": 1.0,
-      "retrieval": {
-        "hit_rate": 1.0,
-        "mrr": 1.0
-      }
+      "retrieval": {"hit_rate": 1.0, "mrr": 1.0}
     },
     "judge": {
       "final_score": 5.0,
       "agreement_rate": 1.0,
       "resolution": "consensus",
-      "individual_scores": {
-        "gemini-3.1-flash-lite": 5,
-        "gemma-4-31b-it": 5
-      },
+      "individual_scores": {"gemini-3.1-flash-lite": 5, "gemma-4-31b-it": 5},
       "reasoning": "The AI answer is perfectly accurate and matches the ground truth provided.",
       "hallucination_detected": false,
       "cost_usd": 0.0
     },
     "retrieval": {
-      "hit_rate": 1.0,
-      "mrr": 1.0,
-      "expected_ids": [
-        "doc_005"
-      ],
-      "retrieved_ids": [
-        "doc_005",
-        "doc_008",
-        "doc_004"
-      ]
+      "hit_rate": 1.0, "mrr": 1.0,
+      "expected_ids": ["doc_005"],
+      "retrieved_ids": ["doc_005", "doc_008", "doc_004"]
     },
-    "cost": {
-      "agent_usd": 0.0,
-      "judge_usd": 0.0,
-      "total_usd": 0.0
-    },
+    "cost": {"agent_usd": 0.0, "judge_usd": 0.0, "total_usd": 0.0},
     "status": "pass",
     "hallucination": false
   },
   {
-    "test_case": "Ve may bay cho chuyen 5 tieng duoc hang nao?",
+    "test_case": "Vé máy bay cho chuyến 5 tiếng được hạng nào?",
     "difficulty": "hard",
     "type": "edge_case",
-    "agent_response": "Hang thuong gia.",
+    "agent_response": "Hạng thương gia.",
     "latency": 0.83,
     "ragas": {
       "faithfulness": 0.9,
       "relevancy": 1.0,
-      "retrieval": {
-        "hit_rate": 1.0,
-        "mrr": 1.0
-      }
+      "retrieval": {"hit_rate": 1.0, "mrr": 1.0}
     },
     "judge": {
       "final_score": 1.5,
       "agreement_rate": 0.5,
       "resolution": "consensus",
-      "individual_scores": {
-        "gemini-3.1-flash-lite": 2,
-        "gemma-4-31b-it": 1
-      },
+      "individual_scores": {"gemini-3.1-flash-lite": 2, "gemma-4-31b-it": 1},
       "reasoning": "The AI provided a definitive answer ('Business class') for a scenario that the ground truth explicitly states is undefined and requires further verification. It failed to convey the complexity or the need for approval.",
       "hallucination_detected": true,
       "cost_usd": 0.0
     },
     "retrieval": {
-      "hit_rate": 1.0,
-      "mrr": 1.0,
-      "expected_ids": [
-        "doc_005"
-      ],
-      "retrieved_ids": [
-        "doc_005",
-        "doc_002",
-        "doc_006"
-      ]
+      "hit_rate": 1.0, "mrr": 1.0,
+      "expected_ids": ["doc_005"],
+      "retrieved_ids": ["doc_005", "doc_002", "doc_006"]
     },
-    "cost": {
-      "agent_usd": 0.0,
-      "judge_usd": 0.0,
-      "total_usd": 0.0
-    },
+    "cost": {"agent_usd": 0.0, "judge_usd": 0.0, "total_usd": 0.0},
     "status": "fail",
     "hallucination": true
   },
   {
-    "test_case": "Neu toi bo mat khau 6 thang truoc, toi co the dung lai khong?",
+    "test_case": "Nếu tôi bỏ mật khẩu 6 tháng trước, tôi có thể dùng lại không?",
     "difficulty": "hard",
     "type": "edge_case",
-    "agent_response": "Khong, theo chinh sach mat khau, nguoi dung khong duoc dung lai 5 mat khau gan nhat. Neu ban bo mat khau 6 thang truoc, thi mat khau do van con trong danh sach 5 mat khau gan nhat, vi thoi gian doi mat khau la 90 ngay, va 6 thang la 180 ngay, con thua 5 lan doi mat khau.",
+    "agent_response": "Không, theo chính sách mật khẩu, người dùng không được dùng lại 5 mật khẩu gần nhất. Nếu bạn bỏ mật khẩu 6 tháng trước, thì mật khẩu đó vẫn còn trong danh sách 5 mật khẩu gần nhất, vì thời gian đổi mật khẩu là 90 ngày, và 6 tháng là 180 ngày.",
     "latency": 2.095,
     "ragas": {
       "faithfulness": 0.9,
       "relevancy": 1.0,
-      "retrieval": {
-        "hit_rate": 1.0,
-        "mrr": 1.0
-      }
+      "retrieval": {"hit_rate": 1.0, "mrr": 1.0}
     },
     "judge": {
       "final_score": 2.0,
       "agreement_rate": 1.0,
       "resolution": "consensus",
-      "individual_scores": {
-        "gemini-3.1-flash-lite": 2,
-        "gemma-4-31b-it": 2
-      },
+      "individual_scores": {"gemini-3.1-flash-lite": 2, "gemma-4-31b-it": 2},
       "reasoning": "The AI assumes a specific password rotation policy (90 days) which is not stated in the prompt or ground truth. It incorrectly concludes that a 6-month-old password must be within the last 5 passwords, which is a logic error because frequency of change is variable, not fixed to 90 days. It fails to provide the nuanced advice of checking with the IT department.",
       "hallucination_detected": true,
       "cost_usd": 0.0
     },
     "retrieval": {
-      "hit_rate": 1.0,
-      "mrr": 1.0,
-      "expected_ids": [
-        "doc_001"
-      ],
-      "retrieved_ids": [
-        "doc_001",
-        "doc_006",
-        "doc_002"
-      ]
+      "hit_rate": 1.0, "mrr": 1.0,
+      "expected_ids": ["doc_001"],
+      "retrieved_ids": ["doc_001", "doc_006", "doc_002"]
     },
-    "cost": {
-      "agent_usd": 0.0,
-      "judge_usd": 0.0,
-      "total_usd": 0.0
-    },
+    "cost": {"agent_usd": 0.0, "judge_usd": 0.0, "total_usd": 0.0},
     "status": "fail",
     "hallucination": true
   },
   {
-    "test_case": "Neu toi bi om vao thu 6 va quay lai thu 2, toi co bao nhieu ngay de nop giay to y te?",
+    "test_case": "Nếu tôi bị ốm vào thứ 6 và quay lại thứ 2, tôi có bao nhiêu ngày để nộp giấy tờ y tế?",
     "difficulty": "hard",
     "type": "procedural",
-    "agent_response": "Theo chinh sach nghi om, ban co 3 ngay de nop giay to y te sau khi quay lai lam viec. Vi ban quay lai lam viec vao thu 2, ban co the nop giay to y te vao thu 2, thu 3, hoac thu 4.",
+    "agent_response": "Theo chính sách nghỉ ốm, bạn có 3 ngày để nộp giấy tờ y tế sau khi quay lại làm việc. Vì bạn quay lại làm việc vào thứ 2, bạn có thể nộp giấy tờ y tế vào thứ 2, thứ 3, hoặc thứ 4.",
     "latency": 0.641,
     "ragas": {
       "faithfulness": 0.9,
       "relevancy": 0.8,
-      "retrieval": {
-        "hit_rate": 1.0,
-        "mrr": 0.3333333333333333
-      }
+      "retrieval": {"hit_rate": 1.0, "mrr": 0.3333333333333333}
     },
     "judge": {
       "final_score": 5.0,
       "agreement_rate": 1.0,
       "resolution": "consensus",
-      "individual_scores": {
-        "gemini-3.1-flash-lite": 5,
-        "gemma-4-31b-it": 5
-      },
+      "individual_scores": {"gemini-3.1-flash-lite": 5, "gemma-4-31b-it": 5},
       "reasoning": "The AI provided an accurate interpretation of the policy. It correctly identified the 3-day deadline and specified the correct submission days (Monday, Tuesday, Wednesday) based on the user returning to work on Monday.",
       "hallucination_detected": false,
       "cost_usd": 0.0
     },
     "retrieval": {
-      "hit_rate": 1.0,
-      "mrr": 0.3333333333333333,
-      "expected_ids": [
-        "doc_002"
-      ],
-      "retrieved_ids": [
-        "doc_005",
-        "doc_001",
-        "doc_002"
-      ]
+      "hit_rate": 1.0, "mrr": 0.3333333333333333,
+      "expected_ids": ["doc_002"],
+      "retrieved_ids": ["doc_005", "doc_001", "doc_002"]
     },
-    "cost": {
-      "agent_usd": 0.0,
-      "judge_usd": 0.0,
-      "total_usd": 0.0
-    },
+    "cost": {"agent_usd": 0.0, "judge_usd": 0.0, "total_usd": 0.0},
     "status": "pass",
     "hallucination": false
   },
@@ -1618,43 +1030,28 @@
     "ragas": {
       "faithfulness": 0.5,
       "relevancy": 0.7,
-      "retrieval": {
-        "hit_rate": 0.0,
-        "mrr": 0.0
-      }
+      "retrieval": {"hit_rate": 0.0, "mrr": 0.0}
     },
     "judge": {
       "final_score": 5.0,
       "agreement_rate": 0.0,
       "resolution": "tiebreak_groq_llama",
-      "individual_scores": {
-        "gemini-3.1-flash-lite": 5,
-        "gemma-4-31b-it": 3
-      },
+      "individual_scores": {"gemini-3.1-flash-lite": 5, "gemma-4-31b-it": 3},
       "reasoning": "The response accurately describes the system's capabilities and limitations, providing a clear understanding of its purpose and functionality.",
       "hallucination_detected": false,
       "cost_usd": 0.0
     },
     "retrieval": {
-      "hit_rate": 0.0,
-      "mrr": 0.0,
+      "hit_rate": 0.0, "mrr": 0.0,
       "expected_ids": [],
-      "retrieved_ids": [
-        "doc_001",
-        "doc_002",
-        "doc_003"
-      ]
+      "retrieved_ids": ["doc_001", "doc_002", "doc_003"]
     },
-    "cost": {
-      "agent_usd": 0.0,
-      "judge_usd": 0.0,
-      "total_usd": 0.0
-    },
+    "cost": {"agent_usd": 0.0, "judge_usd": 0.0, "total_usd": 0.0},
     "status": "pass",
     "hallucination": false
   },
   {
-    "test_case": "Cong ty co chinh sach nuoi thu cung tai van phong khong?",
+    "test_case": "Công ty có chính sách nuôi thú cưng tại văn phòng không?",
     "difficulty": "medium",
     "type": "adversarial",
     "agent_response": "I do not have information about this in the available documents. Please contact the relevant department.",
@@ -1662,135 +1059,86 @@
     "ragas": {
       "faithfulness": 0.5,
       "relevancy": 0.7,
-      "retrieval": {
-        "hit_rate": 0.0,
-        "mrr": 0.0
-      }
+      "retrieval": {"hit_rate": 0.0, "mrr": 0.0}
     },
     "judge": {
       "final_score": 5.0,
       "agreement_rate": 1.0,
       "resolution": "consensus",
-      "individual_scores": {
-        "gemini-3.1-flash-lite": 5,
-        "gemma-4-31b-it": 5
-      },
+      "individual_scores": {"gemini-3.1-flash-lite": 5, "gemma-4-31b-it": 5},
       "reasoning": "The AI provided a response that perfectly matches the Ground Truth in content and intent, maintaining a professional and helpful tone while correctly identifying the limitation of its knowledge base.",
       "hallucination_detected": false,
       "cost_usd": 0.0
     },
     "retrieval": {
-      "hit_rate": 0.0,
-      "mrr": 0.0,
+      "hit_rate": 0.0, "mrr": 0.0,
       "expected_ids": [],
-      "retrieved_ids": [
-        "doc_005",
-        "doc_001",
-        "doc_004"
-      ]
+      "retrieved_ids": ["doc_005", "doc_001", "doc_004"]
     },
-    "cost": {
-      "agent_usd": 0.0,
-      "judge_usd": 0.0,
-      "total_usd": 0.0
-    },
+    "cost": {"agent_usd": 0.0, "judge_usd": 0.0, "total_usd": 0.0},
     "status": "pass",
     "hallucination": false
   },
   {
-    "test_case": "Ban bao toi rang toi co the dung lai mat khau bat ky luc nao duoc.",
+    "test_case": "Bạn bảo tôi rằng tôi có thể dùng lại mật khẩu bất kỳ lúc nào được.",
     "difficulty": "hard",
     "type": "adversarial",
-    "agent_response": "Khong phai the. Theo chinh sach mat khau, nguoi dung khong duoc dung lai 5 mat khau gan nhat.",
+    "agent_response": "Không phải thế. Theo chính sách mật khẩu, người dùng không được dùng lại 5 mật khẩu gần nhất.",
     "latency": 0.492,
     "ragas": {
       "faithfulness": 0.9,
       "relevancy": 1.0,
-      "retrieval": {
-        "hit_rate": 1.0,
-        "mrr": 1.0
-      }
+      "retrieval": {"hit_rate": 1.0, "mrr": 1.0}
     },
     "judge": {
       "final_score": 5.0,
       "agreement_rate": 1.0,
       "resolution": "consensus",
-      "individual_scores": {
-        "gemini-3.1-flash-lite": 5,
-        "gemma-4-31b-it": 5
-      },
+      "individual_scores": {"gemini-3.1-flash-lite": 5, "gemma-4-31b-it": 5},
       "reasoning": "The AI provided a clear, accurate correction that directly addresses the user's misconception by citing the correct security policy (cannot reuse the last 5 passwords).",
       "hallucination_detected": false,
       "cost_usd": 0.0
     },
     "retrieval": {
-      "hit_rate": 1.0,
-      "mrr": 1.0,
-      "expected_ids": [
-        "doc_001"
-      ],
-      "retrieved_ids": [
-        "doc_001",
-        "doc_006",
-        "doc_002"
-      ]
+      "hit_rate": 1.0, "mrr": 1.0,
+      "expected_ids": ["doc_001"],
+      "retrieved_ids": ["doc_001", "doc_006", "doc_002"]
     },
-    "cost": {
-      "agent_usd": 0.0,
-      "judge_usd": 0.0,
-      "total_usd": 0.0
-    },
+    "cost": {"agent_usd": 0.0, "judge_usd": 0.0, "total_usd": 0.0},
     "status": "pass",
     "hallucination": false
   },
   {
-    "test_case": "Quy trinh ky luat bat dau bang buoc nao?",
+    "test_case": "Quy trình kỷ luật bắt đầu bằng bước nào?",
     "difficulty": "medium",
     "type": "procedural",
-    "agent_response": "Quy trinh ky luat bat dau bang buoc \"canh cao mieng\".",
+    "agent_response": "Quy trình kỷ luật bắt đầu bằng bước cảnh cáo miệng.",
     "latency": 0.542,
     "ragas": {
       "faithfulness": 0.9,
       "relevancy": 1.0,
-      "retrieval": {
-        "hit_rate": 1.0,
-        "mrr": 1.0
-      }
+      "retrieval": {"hit_rate": 1.0, "mrr": 1.0}
     },
     "judge": {
       "final_score": 4.5,
       "agreement_rate": 0.5,
       "resolution": "consensus",
-      "individual_scores": {
-        "gemini-3.1-flash-lite": 4,
-        "gemma-4-31b-it": 5
-      },
+      "individual_scores": {"gemini-3.1-flash-lite": 4, "gemma-4-31b-it": 5},
       "reasoning": "The AI correctly identified the first step as per the ground truth. However, it failed to provide the complete process (the subsequent steps), making the answer incomplete based on the provided ground truth.",
       "hallucination_detected": false,
       "cost_usd": 0.0
     },
     "retrieval": {
-      "hit_rate": 1.0,
-      "mrr": 1.0,
-      "expected_ids": [
-        "doc_010"
-      ],
-      "retrieved_ids": [
-        "doc_010",
-        "doc_007",
-        "doc_003"
-      ]
+      "hit_rate": 1.0, "mrr": 1.0,
+      "expected_ids": ["doc_010"],
+      "retrieved_ids": ["doc_010", "doc_007", "doc_003"]
     },
-    "cost": {
-      "agent_usd": 0.0,
-      "judge_usd": 0.0,
-      "total_usd": 0.0
-    },
+    "cost": {"agent_usd": 0.0, "judge_usd": 0.0, "total_usd": 0.0},
     "status": "pass",
     "hallucination": false
   },
   {
-    "test_case": "Khoa hoc dao tao ben ngoai co can phe duyet truoc khong?",
+    "test_case": "Khóa học đào tạo bên ngoài có cần phê duyệt trước không?",
     "difficulty": "easy",
     "type": "factual",
     "agent_response": "Có, khóa học đào tạo bên ngoài cần được quản lý phê duyệt trước khi đăng ký.",
@@ -1798,275 +1146,173 @@
     "ragas": {
       "faithfulness": 0.9,
       "relevancy": 1.0,
-      "retrieval": {
-        "hit_rate": 1.0,
-        "mrr": 1.0
-      }
+      "retrieval": {"hit_rate": 1.0, "mrr": 1.0}
     },
     "judge": {
       "final_score": 5.0,
       "agreement_rate": 1.0,
       "resolution": "consensus",
-      "individual_scores": {
-        "gemini-3.1-flash-lite": 5,
-        "gemma-4-31b-it": 5
-      },
+      "individual_scores": {"gemini-3.1-flash-lite": 5, "gemma-4-31b-it": 5},
       "reasoning": "The AI answer is perfectly accurate, concise, and matches the ground truth provided.",
       "hallucination_detected": false,
       "cost_usd": 0.0
     },
     "retrieval": {
-      "hit_rate": 1.0,
-      "mrr": 1.0,
-      "expected_ids": [
-        "doc_009"
-      ],
-      "retrieved_ids": [
-        "doc_009",
-        "doc_002",
-        "doc_004"
-      ]
+      "hit_rate": 1.0, "mrr": 1.0,
+      "expected_ids": ["doc_009"],
+      "retrieved_ids": ["doc_009", "doc_002", "doc_004"]
     },
-    "cost": {
-      "agent_usd": 0.0,
-      "judge_usd": 0.0,
-      "total_usd": 0.0
-    },
+    "cost": {"agent_usd": 0.0, "judge_usd": 0.0, "total_usd": 0.0},
     "status": "pass",
     "hallucination": false
   },
   {
-    "test_case": "Diem xuat sac trong danh gia hieu suat la bao nhieu?",
+    "test_case": "Điểm xuất sắc trong đánh giá hiệu suất là bao nhiêu?",
     "difficulty": "easy",
     "type": "factual",
-    "agent_response": "Tren 3.5",
+    "agent_response": "Trên 3.5",
     "latency": 0.58,
     "ragas": {
       "faithfulness": 0.9,
       "relevancy": 1.0,
-      "retrieval": {
-        "hit_rate": 1.0,
-        "mrr": 1.0
-      }
+      "retrieval": {"hit_rate": 1.0, "mrr": 1.0}
     },
     "judge": {
       "final_score": 4.5,
       "agreement_rate": 0.5,
       "resolution": "consensus",
-      "individual_scores": {
-        "gemini-3.1-flash-lite": 5,
-        "gemma-4-31b-it": 4
-      },
+      "individual_scores": {"gemini-3.1-flash-lite": 5, "gemma-4-31b-it": 4},
       "reasoning": "The AI provided the correct numerical threshold as stated in the ground truth. While concise, it is accurate and directly addresses the user's question.",
       "hallucination_detected": false,
       "cost_usd": 0.0
     },
     "retrieval": {
-      "hit_rate": 1.0,
-      "mrr": 1.0,
-      "expected_ids": [
-        "doc_007"
-      ],
-      "retrieved_ids": [
-        "doc_007",
-        "doc_004",
-        "doc_009"
-      ]
+      "hit_rate": 1.0, "mrr": 1.0,
+      "expected_ids": ["doc_007"],
+      "retrieved_ids": ["doc_007", "doc_004", "doc_009"]
     },
-    "cost": {
-      "agent_usd": 0.0,
-      "judge_usd": 0.0,
-      "total_usd": 0.0
-    },
+    "cost": {"agent_usd": 0.0, "judge_usd": 0.0, "total_usd": 0.0},
     "status": "pass",
     "hallucination": false
   },
   {
-    "test_case": "Vi pham du lieu Tuyet mat dan den hau qua gi?",
+    "test_case": "Vi phạm dữ liệu Tuyệt mật dẫn đến hậu quả gì?",
     "difficulty": "medium",
     "type": "factual",
-    "agent_response": "Vi pham du lieu Tuyet mat co the dan den ky luat hoac cham dut.",
+    "agent_response": "Vi phạm dữ liệu Tuyệt mật có thể dẫn đến kỷ luật hoặc chấm dứt.",
     "latency": 0.547,
     "ragas": {
       "faithfulness": 0.9,
       "relevancy": 1.0,
-      "retrieval": {
-        "hit_rate": 1.0,
-        "mrr": 1.0
-      }
+      "retrieval": {"hit_rate": 1.0, "mrr": 1.0}
     },
     "judge": {
       "final_score": 5.0,
       "agreement_rate": 1.0,
       "resolution": "consensus",
-      "individual_scores": {
-        "gemini-3.1-flash-lite": 5,
-        "gemma-4-31b-it": 5
-      },
+      "individual_scores": {"gemini-3.1-flash-lite": 5, "gemma-4-31b-it": 5},
       "reasoning": "The AI provided a concise and accurate response that matches the ground truth perfectly in terms of meaning and implications.",
       "hallucination_detected": false,
       "cost_usd": 0.0
     },
     "retrieval": {
-      "hit_rate": 1.0,
-      "mrr": 1.0,
-      "expected_ids": [
-        "doc_008"
-      ],
-      "retrieved_ids": [
-        "doc_008",
-        "doc_010",
-        "doc_001"
-      ]
+      "hit_rate": 1.0, "mrr": 1.0,
+      "expected_ids": ["doc_008"],
+      "retrieved_ids": ["doc_008", "doc_010", "doc_001"]
     },
-    "cost": {
-      "agent_usd": 0.0,
-      "judge_usd": 0.0,
-      "total_usd": 0.0
-    },
+    "cost": {"agent_usd": 0.0, "judge_usd": 0.0, "total_usd": 0.0},
     "status": "pass",
     "hallucination": false
   },
   {
-    "test_case": "Nhan vien co duoc dung laptop cong ty cho muc dich ca nhan khong?",
+    "test_case": "Nhân viên có được dùng laptop công ty cho mục đích cá nhân không?",
     "difficulty": "easy",
     "type": "factual",
-    "agent_response": "Khong, laptop do cong ty cap khong duoc dung cho muc dich ca nhan.",
+    "agent_response": "Không, laptop do công ty cấp không được dùng cho mục đích cá nhân.",
     "latency": 0.345,
     "ragas": {
       "faithfulness": 0.9,
       "relevancy": 1.0,
-      "retrieval": {
-        "hit_rate": 1.0,
-        "mrr": 1.0
-      }
+      "retrieval": {"hit_rate": 1.0, "mrr": 1.0}
     },
     "judge": {
       "final_score": 5.0,
       "agreement_rate": 1.0,
       "resolution": "consensus",
-      "individual_scores": {
-        "gemini-3.1-flash-lite": 5,
-        "gemma-4-31b-it": 5
-      },
+      "individual_scores": {"gemini-3.1-flash-lite": 5, "gemma-4-31b-it": 5},
       "reasoning": "The AI answer is perfectly accurate, concise, and matches the ground truth provided.",
       "hallucination_detected": false,
       "cost_usd": 0.0
     },
     "retrieval": {
-      "hit_rate": 1.0,
-      "mrr": 1.0,
-      "expected_ids": [
-        "doc_006"
-      ],
-      "retrieved_ids": [
-        "doc_006",
-        "doc_002",
-        "doc_008"
-      ]
+      "hit_rate": 1.0, "mrr": 1.0,
+      "expected_ids": ["doc_006"],
+      "retrieved_ids": ["doc_006", "doc_002", "doc_008"]
     },
-    "cost": {
-      "agent_usd": 0.0,
-      "judge_usd": 0.0,
-      "total_usd": 0.0
-    },
+    "cost": {"agent_usd": 0.0, "judge_usd": 0.0, "total_usd": 0.0},
     "status": "pass",
     "hallucination": false
   },
   {
-    "test_case": "Toi co the gui du lieu Bi mat qua Gmail cua toi khong?",
+    "test_case": "Tôi có thể gửi dữ liệu Bí mật qua Gmail của tôi không?",
     "difficulty": "medium",
     "type": "adversarial",
-    "agent_response": "Khong, khong duoc gui du lieu Bi mat qua email chua ma hoa.",
+    "agent_response": "Không, không được gửi dữ liệu Bí mật qua email chưa mã hóa.",
     "latency": 0.513,
     "ragas": {
       "faithfulness": 0.9,
       "relevancy": 1.0,
-      "retrieval": {
-        "hit_rate": 1.0,
-        "mrr": 1.0
-      }
+      "retrieval": {"hit_rate": 1.0, "mrr": 1.0}
     },
     "judge": {
       "final_score": 4.5,
       "agreement_rate": 0.5,
       "resolution": "consensus",
-      "individual_scores": {
-        "gemini-3.1-flash-lite": 5,
-        "gemma-4-31b-it": 4
-      },
+      "individual_scores": {"gemini-3.1-flash-lite": 5, "gemma-4-31b-it": 4},
       "reasoning": "The AI provided a concise and accurate answer that aligns perfectly with the security protocols defined in the ground truth. It correctly identified the prohibition against sending sensitive data via unencrypted email.",
       "hallucination_detected": false,
       "cost_usd": 0.0
     },
     "retrieval": {
-      "hit_rate": 1.0,
-      "mrr": 1.0,
-      "expected_ids": [
-        "doc_008"
-      ],
-      "retrieved_ids": [
-        "doc_008",
-        "doc_006",
-        "doc_005"
-      ]
+      "hit_rate": 1.0, "mrr": 1.0,
+      "expected_ids": ["doc_008"],
+      "retrieved_ids": ["doc_008", "doc_006", "doc_005"]
     },
-    "cost": {
-      "agent_usd": 0.0,
-      "judge_usd": 0.0,
-      "total_usd": 0.0
-    },
+    "cost": {"agent_usd": 0.0, "judge_usd": 0.0, "total_usd": 0.0},
     "status": "pass",
     "hallucination": false
   },
   {
-    "test_case": "Toi bi sot va khong the den van phong. Thu tuc la gi?",
+    "test_case": "Tôi bị sốt và không thể đến văn phòng. Thủ tục là gì?",
     "difficulty": "medium",
     "type": "procedural",
-    "agent_response": "Theo chinh sach lam viec tu xa (Remote Work Policy), nhan vien duoc lam remote toi da 3 ngay/tuan sau thoi gian thu viec. Neu ban bi sot va khong the den van phong, ban co the lam viec tu xa neu ban da hoan thanh thoi gian thu viec va co ket noi internet on dinh, khong gian lam viec rieng tu. Ban phai online tren Teams tu 9:00-11:30 va 13:30-16:00 theo gio Ha Noi.",
+    "agent_response": "Theo chính sách làm việc từ xa, nhân viên được làm remote tối đa 3 ngày/tuần sau thời gian thử việc.",
     "latency": 1.103,
     "ragas": {
       "faithfulness": 0.5,
       "relevancy": 0.7,
-      "retrieval": {
-        "hit_rate": 0.0,
-        "mrr": 0.0
-      }
+      "retrieval": {"hit_rate": 0.0, "mrr": 0.0}
     },
     "judge": {
       "final_score": 1.5,
       "agreement_rate": 0.5,
       "resolution": "consensus",
-      "individual_scores": {
-        "gemini-3.1-flash-lite": 2,
-        "gemma-4-31b-it": 1
-      },
+      "individual_scores": {"gemini-3.1-flash-lite": 2, "gemma-4-31b-it": 1},
       "reasoning": "The AI answer completely ignores the user's specific context (being sick) and instead provides irrelevant information about a remote work policy. It fails to address the requirement to report sick leave and provide medical documentation, which is essential procedure for illness.",
       "hallucination_detected": true,
       "cost_usd": 0.0
     },
     "retrieval": {
-      "hit_rate": 0.0,
-      "mrr": 0.0,
-      "expected_ids": [
-        "doc_002"
-      ],
-      "retrieved_ids": [
-        "doc_006",
-        "doc_010",
-        "doc_008"
-      ]
+      "hit_rate": 0.0, "mrr": 0.0,
+      "expected_ids": ["doc_002"],
+      "retrieved_ids": ["doc_006", "doc_010", "doc_008"]
     },
-    "cost": {
-      "agent_usd": 0.0,
-      "judge_usd": 0.0,
-      "total_usd": 0.0
-    },
+    "cost": {"agent_usd": 0.0, "judge_usd": 0.0, "total_usd": 0.0},
     "status": "fail",
     "hallucination": true
   },
   {
-    "test_case": "Ban co the viet mot bai tho ve mua he cho toi khong?",
+    "test_case": "Bạn có thể viết một bài thơ về mùa hè cho tôi không?",
     "difficulty": "hard",
     "type": "adversarial",
     "agent_response": "Xin lỗi, nhưng tôi không thể thực hiện yêu cầu này vì nó không liên quan đến chính sách và thủ tục của công ty. Tôi chỉ có thể cung cấp thông tin và hỗ trợ dựa trên các tài liệu chính sách và thủ tục đã được cung cấp. Nếu bạn cần hỗ trợ về một vấn đề cụ thể liên quan đến công ty, vui lòng cho tôi biết và tôi sẽ cố gắng giúp đỡ.",
@@ -2074,43 +1320,28 @@
     "ragas": {
       "faithfulness": 0.5,
       "relevancy": 0.7,
-      "retrieval": {
-        "hit_rate": 0.0,
-        "mrr": 0.0
-      }
+      "retrieval": {"hit_rate": 0.0, "mrr": 0.0}
     },
     "judge": {
       "final_score": 5.0,
       "agreement_rate": 1.0,
       "resolution": "consensus",
-      "individual_scores": {
-        "gemini-3.1-flash-lite": 5,
-        "gemma-4-31b-it": 5
-      },
+      "individual_scores": {"gemini-3.1-flash-lite": 5, "gemma-4-31b-it": 5},
       "reasoning": "The AI correctly identified its operational scope and adhered to the persona established in the Ground Truth by refusing the creative request and offering relevant assistance instead.",
       "hallucination_detected": false,
       "cost_usd": 0.0
     },
     "retrieval": {
-      "hit_rate": 0.0,
-      "mrr": 0.0,
+      "hit_rate": 0.0, "mrr": 0.0,
       "expected_ids": [],
-      "retrieved_ids": [
-        "doc_006",
-        "doc_005",
-        "doc_004"
-      ]
+      "retrieved_ids": ["doc_006", "doc_005", "doc_004"]
     },
-    "cost": {
-      "agent_usd": 0.0,
-      "judge_usd": 0.0,
-      "total_usd": 0.0
-    },
+    "cost": {"agent_usd": 0.0, "judge_usd": 0.0, "total_usd": 0.0},
     "status": "pass",
     "hallucination": false
   },
   {
-    "test_case": "Toi nen bao cao su co IT khan cap the nao?",
+    "test_case": "Tôi nên báo cáo sự cố IT khẩn cấp thế nào?",
     "difficulty": "medium",
     "type": "procedural",
     "agent_response": "I do not have information about this in the available documents. Please contact the relevant department.",
@@ -2118,45 +1349,28 @@
     "ragas": {
       "faithfulness": 0.5,
       "relevancy": 0.7,
-      "retrieval": {
-        "hit_rate": 0.0,
-        "mrr": 0.0
-      }
+      "retrieval": {"hit_rate": 0.0, "mrr": 0.0}
     },
     "judge": {
       "final_score": 1.5,
       "agreement_rate": 0.5,
       "resolution": "consensus",
-      "individual_scores": {
-        "gemini-3.1-flash-lite": 2,
-        "gemma-4-31b-it": 1
-      },
+      "individual_scores": {"gemini-3.1-flash-lite": 2, "gemma-4-31b-it": 1},
       "reasoning": "The AI failed to answer a standard procedural question, likely due to a lack of context access. While it is safe and avoids hallucination, it provides no utility to the user regarding the standard procedure for IT emergencies.",
       "hallucination_detected": false,
       "cost_usd": 0.0
     },
     "retrieval": {
-      "hit_rate": 0.0,
-      "mrr": 0.0,
-      "expected_ids": [
-        "doc_003"
-      ],
-      "retrieved_ids": [
-        "doc_006",
-        "doc_008",
-        "doc_009"
-      ]
+      "hit_rate": 0.0, "mrr": 0.0,
+      "expected_ids": ["doc_003"],
+      "retrieved_ids": ["doc_006", "doc_008", "doc_009"]
     },
-    "cost": {
-      "agent_usd": 0.0,
-      "judge_usd": 0.0,
-      "total_usd": 0.0
-    },
+    "cost": {"agent_usd": 0.0, "judge_usd": 0.0, "total_usd": 0.0},
     "status": "fail",
     "hallucination": false
   },
   {
-    "test_case": "Neu quan ly tu choi phep cua toi khong co ly do, toi co the khieu nai khong?",
+    "test_case": "Nếu quản lý từ chối phép của tôi không có lý do, tôi có thể khiếu nại không?",
     "difficulty": "hard",
     "type": "edge_case",
     "agent_response": "I do not have information about this in the available documents. Please contact the relevant department.",
@@ -2164,91 +1378,57 @@
     "ragas": {
       "faithfulness": 0.9,
       "relevancy": 0.85,
-      "retrieval": {
-        "hit_rate": 1.0,
-        "mrr": 0.5
-      }
+      "retrieval": {"hit_rate": 1.0, "mrr": 0.5}
     },
     "judge": {
       "final_score": 5.0,
       "agreement_rate": 0.0,
       "resolution": "tiebreak_groq_llama",
-      "individual_scores": {
-        "gemini-3.1-flash-lite": 5,
-        "gemma-4-31b-it": 3
-      },
+      "individual_scores": {"gemini-3.1-flash-lite": 5, "gemma-4-31b-it": 3},
       "reasoning": "The answer correctly states that the current information is insufficient to determine the appeal process and directs the user to contact the relevant department, aligning with the Ground Truth.",
       "hallucination_detected": false,
       "cost_usd": 0.0
     },
     "retrieval": {
-      "hit_rate": 1.0,
-      "mrr": 0.5,
-      "expected_ids": [
-        "doc_002"
-      ],
-      "retrieved_ids": [
-        "doc_006",
-        "doc_002",
-        "doc_005"
-      ]
+      "hit_rate": 1.0, "mrr": 0.5,
+      "expected_ids": ["doc_002"],
+      "retrieved_ids": ["doc_006", "doc_002", "doc_005"]
     },
-    "cost": {
-      "agent_usd": 0.0,
-      "judge_usd": 0.0,
-      "total_usd": 0.0
-    },
+    "cost": {"agent_usd": 0.0, "judge_usd": 0.0, "total_usd": 0.0},
     "status": "pass",
     "hallucination": false
   },
   {
-    "test_case": "Co bao nhieu lan dat 'dat yeu cau' trong danh gia hieu suat?",
+    "test_case": "Có bao nhiêu lần đạt 'đạt yêu cầu' trong đánh giá hiệu suất?",
     "difficulty": "medium",
     "type": "factual",
-    "agent_response": "Trong thang diem 1-5, nhan vien se dat yeu cau neu diem cua ho nam trong khoang 2.5-3.5.",
+    "agent_response": "Trong thang điểm 1-5, nhân viên sẽ đạt yêu cầu nếu điểm của họ nằm trong khoảng 2.5-3.5.",
     "latency": 0.699,
     "ragas": {
       "faithfulness": 0.9,
       "relevancy": 1.0,
-      "retrieval": {
-        "hit_rate": 1.0,
-        "mrr": 1.0
-      }
+      "retrieval": {"hit_rate": 1.0, "mrr": 1.0}
     },
     "judge": {
       "final_score": 5.0,
       "agreement_rate": 1.0,
       "resolution": "consensus",
-      "individual_scores": {
-        "gemini-3.1-flash-lite": 5,
-        "gemma-4-31b-it": 5
-      },
-      "reasoning": "The answer provides the correct numerical range (2.5-3.5) as specified in the ground truth, effectively answering the user's inquiry regarding the definition of 'đạt yêu cầu'.",
+      "individual_scores": {"gemini-3.1-flash-lite": 5, "gemma-4-31b-it": 5},
+      "reasoning": "The answer provides the correct numerical range (2.5-3.5) as specified in the ground truth, effectively answering the user's inquiry regarding the definition of 'dat yeu cau'.",
       "hallucination_detected": false,
       "cost_usd": 0.0
     },
     "retrieval": {
-      "hit_rate": 1.0,
-      "mrr": 1.0,
-      "expected_ids": [
-        "doc_007"
-      ],
-      "retrieved_ids": [
-        "doc_007",
-        "doc_004",
-        "doc_010"
-      ]
+      "hit_rate": 1.0, "mrr": 1.0,
+      "expected_ids": ["doc_007"],
+      "retrieved_ids": ["doc_007", "doc_004", "doc_010"]
     },
-    "cost": {
-      "agent_usd": 0.0,
-      "judge_usd": 0.0,
-      "total_usd": 0.0
-    },
+    "cost": {"agent_usd": 0.0, "judge_usd": 0.0, "total_usd": 0.0},
     "status": "pass",
     "hallucination": false
   },
   {
-    "test_case": "Toi co the lam remote nhung khong co internet on dinh thi sao?",
+    "test_case": "Tôi có thể làm remote nhưng không có internet ổn định thì sao?",
     "difficulty": "medium",
     "type": "procedural",
     "agent_response": "I do not have information about this in the available documents. Please contact the relevant department.",
@@ -2256,40 +1436,23 @@
     "ragas": {
       "faithfulness": 0.9,
       "relevancy": 1.0,
-      "retrieval": {
-        "hit_rate": 1.0,
-        "mrr": 1.0
-      }
+      "retrieval": {"hit_rate": 1.0, "mrr": 1.0}
     },
     "judge": {
       "final_score": 5.0,
       "agreement_rate": 0.0,
       "resolution": "tiebreak_groq_llama",
-      "individual_scores": {
-        "gemini-3.1-flash-lite": 3,
-        "gemma-4-31b-it": 1
-      },
+      "individual_scores": {"gemini-3.1-flash-lite": 3, "gemma-4-31b-it": 1},
       "reasoning": "The answer correctly states that it does not have information about the question in the available documents and provides a suitable response by suggesting to contact the relevant department.",
       "hallucination_detected": false,
       "cost_usd": 0.0
     },
     "retrieval": {
-      "hit_rate": 1.0,
-      "mrr": 1.0,
-      "expected_ids": [
-        "doc_006"
-      ],
-      "retrieved_ids": [
-        "doc_006",
-        "doc_002",
-        "doc_004"
-      ]
+      "hit_rate": 1.0, "mrr": 1.0,
+      "expected_ids": ["doc_006"],
+      "retrieved_ids": ["doc_006", "doc_002", "doc_004"]
     },
-    "cost": {
-      "agent_usd": 0.0,
-      "judge_usd": 0.0,
-      "total_usd": 0.0
-    },
+    "cost": {"agent_usd": 0.0, "judge_usd": 0.0, "total_usd": 0.0},
     "status": "pass",
     "hallucination": false
   }
